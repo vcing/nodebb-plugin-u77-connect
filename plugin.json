@@ -1,0 +1,8 @@
+{
+    "url": "https://github.com/vcing/nodebb-plugin-u77-connect.git",
+    "library": "./index.js",
+    "hooks": [
+        { "hook": "filter:post.save", "method": "filter" },
+        { "hook": "action:post.save", "method": "emailme" }
+    ],
+}
