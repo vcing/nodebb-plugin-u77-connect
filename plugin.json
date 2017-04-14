@@ -1,5 +1,6 @@
 {
-
+    "id": "nodebb-plugin-u77-connect",
+    "name": "NodeBB U77 Connect",
     "url": "https://github.com/vcing/nodebb-plugin-u77-connect.git",
     "library": "./library.js",
     "hooks": [
