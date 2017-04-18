@@ -8,8 +8,10 @@
         .require('passport-local')
         .Strategy;
     var U77Connect = {};
+    var controllers = module.parent.require('./controllers');
 
-    U77Connect.init = function (data, callback) {
+
+    U77Connect.init = function (params, callback) {
         console.log('-----------------u77 connect-----------------');
         callback();
     }
@@ -21,7 +23,11 @@
     }
 
     function login(req, username, password, next) {
-        next(null,{uid:1});
+        next(null, {uid: 1});
+    }
+
+    U77Connect.routeFilter = function(req,res,next) {
+        // controllers.register(req,res,next);
     }
 
     module.exports = U77Connect;
