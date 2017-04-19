@@ -1,23 +1,24 @@
 {
-    "name": "nodebb-plugin-u77-connect",
-    "version": "1.0.0",
-    "main": "library.js",
-    "dependencies": {
-        "babel-polyfill": "^6.23.0"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/vcing/nodebb-plugin-u77-connect.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/vcing/nodebb-plugin-u77-connect/issues"
-    },
-    "homepage": "https://github.com/vcing/nodebb-plugin-u77-connect#readme",
-    "description": ""
+  "name": "nodebb-plugin-u77-connect",
+  "version": "1.0.0",
+  "main": "library.js",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vcing/nodebb-plugin-u77-connect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vcing/nodebb-plugin-u77-connect/issues"
+  },
+  "homepage": "https://github.com/vcing/nodebb-plugin-u77-connect#readme",
+  "description": ""
 }

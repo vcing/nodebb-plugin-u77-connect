@@ -15,5 +15,6 @@
             "hook": "filter:router.page",
             "method": "routeFilter"
         }
-    ]
+    ],
+    "templates": "./templates"
 }
