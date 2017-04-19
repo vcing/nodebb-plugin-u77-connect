@@ -14,7 +14,14 @@
         {
             "hook": "filter:router.page",
             "method": "routeFilter"
+        },
+        {
+            "hook": "filter:auth.init",
+            "method": "getStrategy"
         }
     ],
-    "templates": "./templates"
+    "templates": "./templates",
+    "scripts": [
+        "client.js"
+    ]
 }

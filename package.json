@@ -4,6 +4,7 @@
   "main": "library.js",
   "dependencies": {
     "babel-polyfill": "^6.23.0",
+    "crypto": "0.0.3",
     "request": "^2.81.0"
   },
   "devDependencies": {},
