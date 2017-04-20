@@ -18,6 +18,14 @@
         {
             "hook": "filter:auth.init",
             "method": "getStrategy"
+        },
+        {
+            "hook": "filter:register.check",
+            "method": "registerCheck"
+        },
+        {
+            "hook": "filter:register.complete",
+            "method": "registerComplete"
         }
     ],
     "templates": "./templates",

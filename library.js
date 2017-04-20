@@ -212,6 +212,37 @@
         callback(null, strategies);
     }
 
+    U77Connect.registerCheck = function(data,next) {
+        let url = u77path+'user/reg?username='+data.userData.username+'&email='+data.userData.email+'&password='+data.userData.password;
+        request(url,function(err,response,body) {
+            console.log(body);
+            try {
+                body = JSON.parse(body);
+            }catch(e) {
+                err = e;
+            }
+            if(err || body.status != 100) {
+                if(err) {
+                    next(new Error(err));
+                }else {
+                    next(new Error(body.msg));
+                }
+            }else {
+                next(null,data);
+            }
+        });
+    }
+
+    U77Connect.registerComplete = function(data,next) {
+        console.log('---------------------complete');
+        console.log(data);
+        User.getUserData(data.uid,function(err,user) {
+            // let url = u77path+'user/check?username='+user.username+'&email='+user.email;
+            next(null,data);
+        });
+        
+    }
+
     function md5(str) {
         return crypto
             .createHash('md5')
