@@ -40,93 +40,6 @@
         callback();
     }
 
-    U77Connect.auth = function () {
-        passport.use(new passportLocal({
-            passReqToCallback: true
-        }, login));
-    }
-
-    function login(req, username, password, next) {
-        if (req.body.sign) {
-            if (md5(username + secret) == req.body.sign) {
-                if (req.body.uid) {
-                    next(null, {uid: req.body.uid});
-                    return;
-                }
-                let userData = {
-                    username: req.body.name,
-                    email: req.body.email || '',
-                    password: (Math.random() * 10000000000).toFixed(0),
-                    picture: req.body.avatar == 'undefined' || req.body.avatar == ''
-                        ? 'http://img.u77.com/avatar/u77_avatar.jpg'
-                        : 'http://img.u77.com/avatar/' + req.body.avatar,
-                    gravatarpicture: req.body.avatar == 'undefined' || req.body.avatar == ''
-                        ? 'http://img.u77.com/avatar/u77_avatar.jpg'
-                        : 'http://img.u77.com/avatar/' + req.body.avatar
-                }
-                User.create(userData, function (err, uid) {
-                    if (err) {
-                        next(err);
-                        return;
-                    }
-                    request(u77path + 'user/uid?id=' + body.user.id + '&uid=' + uid, function (err, response, body) {
-                        next(null, {uid: uid});
-                    });
-                });
-            } else {
-                next(new Error('wrong sign'));
-            }
-            return;
-        }
-        request
-            .post(u77path + 'member/login-api', {
-                form: {
-                    username: username,
-                    password: password
-                }
-            }, function (err, response, body) {
-                try {
-                    body = JSON.parse(body);
-                    body.user.detail = JSON.parse(body.user.detail);
-                } catch (e) {
-                    next(e);
-                    return;
-                }
-                if (err) {
-                    next(err);
-                    return;
-                }
-                if (body.err) {
-                    next(null, false, body.msg);
-                    return;
-                }
-                if (body.user.detail.uid) {
-                    next(null, {uid: body.user.detail.uid});
-                    return;
-                }
-                let userData = {
-                    username: body.user.name,
-                    email: body.user.email || '',
-                    password: (Math.random() * 10000000000).toFixed(0),
-                    picture: body.user.avatar == 'undefined'
-                        ? 'http://img.u77.com/avatar/u77_avatar.jpg'
-                        : 'http://img.u77.com/avatar/' + body.user.avatar,
-                    gravatarpicture: body.user.avatar == 'undefined'
-                        ? 'http://img.u77.com/avatar/u77_avatar.jpg'
-                        : 'http://img.u77.com/avatar/' + body.user.avatar
-                }
-                User.create(userData, function (err, uid) {
-                    if (err) {
-                        next(err);
-                        return;
-                    }
-                    request(u77path + 'user/uid?id=' + body.user.id + '&uid=' + uid, function (err, response, body) {
-                        next(null, {uid: uid});
-                    });
-                });
-            });
-    }
-
     U77Connect.routeFilter = function (req, res, next) {
         // controllers.register(req,res,next);
         next();
@@ -212,34 +125,7 @@
         callback(null, strategies);
     }
 
-    U77Connect.registerCheck = function(data,next) {
-        let url = u77path+'user/reg?username='+data.userData.username+'&email='+data.userData.email+'&password='+data.userData.password;
-        request(url,function(err,response,body) {
-            console.log(body);
-            try {
-                body = JSON.parse(body);
-            }catch(e) {
-                err = e;
-            }
-            if(err || body.status != 100) {
-                if(err) {
-                    next(new Error(err));
-                }else {
-                    next(new Error(body.msg));
-                }
-            }else {
-                next(null,data);
-            }
-        });
-    }
-
-    U77Connect.registerComplete = function(data,next) {
-        console.log('---------------------complete');
-        console.log(data);
-        User.getUserData(data.uid,function(err,user) {
-            // let url = u77path+'user/check?username='+user.username+'&email='+user.email;
-            next(null,data);
-        });
+    U77Connect.getAssociation = function (data,callback) {
         
     }
 
