@@ -24,9 +24,19 @@
     var u77path = require('./config.json').u77path;
     var crypto = require('crypto');
     var secret = require('./config.json').secret;
+    var express = module
+        .parent
+        .require('express');
 
     U77Connect.init = function (params, callback) {
         console.log('-----------------u77 connect-----------------');
+        // var pagesRouter = express.Router();
+        var helpers = module
+            .parent
+            .require('./routes/helpers');
+        helpers.setupPageRoute(params.router, '/testtag', params.middleware, [], function (req, res) {
+            res.render('u77-connect/tags');
+        });
         callback();
     }
 
@@ -36,11 +46,11 @@
     }
 
     U77Connect.getStrategy = function (strategies, callback) {
-        callback(null,strategies);
+        callback(null, strategies);
     }
 
-    U77Connect.getAssociation = function (data,callback) {
-        callback(null,data);
+    U77Connect.getAssociation = function (data, callback) {
+        callback(null, data);
     }
 
     function md5(str) {
