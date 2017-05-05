@@ -28,7 +28,6 @@
     var authenticationController = module
         .parent
         .require('./controllers/authentication');
-    var u77path = require('./config.json').u77path;
     var path = require('path');
     var crypto = require('crypto');
     var secret = require('./config.json').secret;
