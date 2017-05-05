@@ -35,15 +35,17 @@
         .parent
         .require('express');
     var app;
+    var middleware;
 
     U77Connect.init = function (params, callback) {
         app = params.app;
+        middleware = params.middleware;
         console.log('-----------------u77 connect-----------------');
         // var pagesRouter = express.Router();
         var helpers = module
             .parent
             .require('./routes/helpers');
-        helpers.setupPageRoute(params.router, '/testtag', params.middleware, [], function (req, res) {
+        helpers.setupPageRoute(params.router, '/testtag', middleware, [], function (req, res) {
             res.render('u77-connect/tags');
         });
         callback();
@@ -95,35 +97,25 @@
     U77Connect.render = function (params, callback) {
         var categoryController = controllers.category;
         try {
-            var mockReq = {
-                uid: params.uid,
-                params: {
-                    category_id: params.data.categoryId || 1,
-                    slug: ''
-                },
-                query: {
-                    page: '1'
-                },
-                session: {
-                    returnTo: ''
-                }
-            }
-
-            var resWrap = {
-                locals: {},
-                redirect: function (path) {},
-                status: function (code) {
-                    return {
-                        render: function (code, data) {
-                            
-                        }
-                    }
-                },
-                render: function (template, data) {
-                    app.render('u77-connect/category', data, callback);
-                }
-
+            params.req.params = {
+                category_id: params.data.categoryId,
+                slug: ''
             };
+            params.req.query = {
+                page: 1
+            };
+            params.res.locals.isAPI = false;
+            params.res.locals.config = {
+                userLang: 'zh-CN'
+            };
+            var _render = params.res.render;
+
+            params.res.render = function (template, data) {
+                _render
+                    .call(params.res, 'u77-connect/category', data, function (err, html) {
+                        callback(err, html);
+                    });
+            }
 
             async.waterfall([
                 function (next) {
@@ -132,12 +124,10 @@
                     ], next);
                 },
                 function (topic, next) {
-                    mockReq.params.slug = topic
+                    params.req.params.slug = topic
                         .slug
                         .replace(/\d+\//g, "");
-                    // winston.info("Intercepted topic request. topic id: " +
-                    // mockReq.params.topic_id + " (slug from db): " + mockReq.params.slug);
-                    categoryController.get(mockReq, resWrap, callback);
+                    categoryController.get(params.req, params.res, callback);
                 }
             ]);
         } catch (e) {
