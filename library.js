@@ -30,7 +30,7 @@
         .require('./controllers/authentication');
     var path = require('path');
     var crypto = require('crypto');
-    var secret = require('./config.json').secret;
+    // var secret = require('./config.json').secret;
     var express = module
         .parent
         .require('express');
