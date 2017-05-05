@@ -18,10 +18,19 @@
         {
             "hook": "filter:auth.list",
             "method": "getAssociation"
+        },
+        {
+            "hook": "filter:widgets.getWidgets",
+            "method": "getWidgets"
+        },
+        {
+            "hook": "filter:widget.render:category-widget",
+            "method": "render"
         }
     ],
     "templates": "./templates",
     "scripts": [
         "client.js"
-    ]
+    ],
+    "language": ""
 }

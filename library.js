@@ -11,6 +11,12 @@
     var controllers = module
         .parent
         .require('./controllers');
+    var categories = module
+        .parent
+        .require('./categories');
+    var async = module
+        .parent
+        .require('async');
     var User = module
         .parent
         .require('./user');
@@ -18,17 +24,21 @@
         .parent
         .require('./database');
     var request = require('request');
+    var fs = require('fs');
     var authenticationController = module
         .parent
         .require('./controllers/authentication');
     var u77path = require('./config.json').u77path;
+    var path = require('path');
     var crypto = require('crypto');
     var secret = require('./config.json').secret;
     var express = module
         .parent
         .require('express');
+    var app;
 
     U77Connect.init = function (params, callback) {
+        app = params.app;
         console.log('-----------------u77 connect-----------------');
         // var pagesRouter = express.Router();
         var helpers = module
@@ -51,6 +61,90 @@
 
     U77Connect.getAssociation = function (data, callback) {
         callback(null, data);
+    }
+
+    function loadWidgetTemplate(template, next) {
+        var __dirname = "./node_modules/nodebb-plugin-u77-connect";
+        var templateFile = path.resolve(__dirname, template);
+        // winston.info("Loading templateFile: " + templateFile);
+
+        fs.readFile(templateFile, function (err, data) {
+            if (err) {
+                console.log(err.message);
+                return next(null, err);
+            }
+            next(data.toString());
+        });
+    }
+
+    U77Connect.getWidgets = function (widgets, callback) {
+        loadWidgetTemplate('./templates/u77-connect/admin/category.tpl', function (templateData) {
+            console.log(templateData);
+            widgets = widgets.concat([
+                {
+                    widget: "category-widget",
+                    name: "Category Widget",
+                    description: "Renders the specific category",
+                    content: templateData
+                }
+            ]);
+
+            callback(null, widgets);
+        });
+    },
+
+    U77Connect.render = function (params, callback) {
+        var categoryController = controllers.category;
+        try {
+            var mockReq = {
+                uid: params.uid,
+                params: {
+                    category_id: params.data.categoryId || 1,
+                    slug: ''
+                },
+                query: {
+                    page: '1'
+                },
+                session: {
+                    returnTo: ''
+                }
+            }
+
+            var resWrap = {
+                locals: {},
+                redirect: function (path) {},
+                status: function (code) {
+                    return {
+                        render: function (code, data) {
+                            
+                        }
+                    }
+                },
+                render: function (template, data) {
+                    app.render('u77-connect/category', data, callback);
+                }
+
+            };
+
+            async.waterfall([
+                function (next) {
+                    categories.getCategoryFields(parseInt(params.data.categoryId || 1), [
+                        'slug', 'disabled', 'topic_count'
+                    ], next);
+                },
+                function (topic, next) {
+                    mockReq.params.slug = topic
+                        .slug
+                        .replace(/\d+\//g, "");
+                    // winston.info("Intercepted topic request. topic id: " +
+                    // mockReq.params.topic_id + " (slug from db): " + mockReq.params.slug);
+                    categoryController.get(mockReq, resWrap, callback);
+                }
+            ]);
+        } catch (e) {
+            console.error(e);
+        }
+
     }
 
     function md5(str) {
