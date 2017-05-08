@@ -26,6 +26,10 @@
         {
             "hook": "filter:widget.render:category-widget",
             "method": "render"
+        },
+        {
+            "hook": "filter:widget.render:custom-recent-topics",
+            "method": "renderRecentTopicsWidget"
         }
     ],
     "templates": "./templates",

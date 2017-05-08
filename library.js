@@ -8,6 +8,9 @@
         .require('passport-local')
         .Strategy;
     var U77Connect = {};
+    var translator = module
+        .parent
+        .require('../public/src/modules/translator');
     var controllers = module
         .parent
         .require('./controllers');
@@ -17,6 +20,9 @@
     var async = module
         .parent
         .require('async');
+    var nconf = module
+        .parent
+        .require('nconf');
     var User = module
         .parent
         .require('./user');
@@ -78,20 +84,41 @@
         });
     }
 
-    U77Connect.getWidgets = function (widgets, callback) {
-        loadWidgetTemplate('./templates/u77-connect/admin/category.tpl', function (templateData) {
-            console.log(templateData);
-            widgets = widgets.concat([
+    U77Connect.getWidgets = function (widgets, next) {
+        // loadWidgetTemplate('./templates/u77-connect/admin/category.tpl', function
+        // (templateData) { widgets = widgets.concat([     {         widget:
+        // "category-widget",         name: "Category Widget",         description:
+        // "Renders the specific category",         content:
+        // 'u77-connect/admin/category'     }, {         widget: "custom-recent-topics",
+        //         name: "Custom Recent Topics",         description: "Lists the latest
+        // topics on your forum.",         content: 'u77-connect/admin/recenttopics'
+        // } ]);
+
+        async
+            .map([
                 {
                     widget: "category-widget",
                     name: "Category Widget",
                     description: "Renders the specific category",
-                    content: templateData
+                    content: 'u77-connect/admin/category'
+                }, {
+                    widget: "custom-recent-topics",
+                    name: "Custom Recent Topics",
+                    description: "Lists the latest topics on your forum.",
+                    content: 'u77-connect/admin/recenttopics'
                 }
-            ]);
+            ], function (widget, _next) {
+                app
+                    .render(widget.content, {}, function (err, html) {
+                        widget.content = html;
+                        _next(err, widget);
+                    });
+            }, function (err, _widgets) {
+                widgets = widgets.concat(_widgets);
+                next(err, widgets);
+            });
 
-            callback(null, widgets);
-        });
+        // });
     },
 
     U77Connect.render = function (params, callback) {
@@ -135,6 +162,35 @@
         }
 
     }
+
+    U77Connect.renderRecentTopicsWidget = function (widget, callback) {
+        var numTopics = (widget.data.numTopics || 8) - 1;
+        var cid = widget.data.cid || 1
+        var payload = {
+            cid: cid,
+            set: 'cid:' + cid + ':tids',
+            reverse: true,
+            start: 0,
+            stop: Math.max(0, numTopics),
+            uid: widget.req.uid
+        };
+
+        categories.getCategoryTopics(payload, function (err, data) {
+            if (err) {
+                return callback(err);
+            }
+            app.render('u77-connect/recenttopics', {
+                topics: data.topics,
+                numTopics: numTopics,
+                relative_path: nconf.get('relative_path')
+            }, function (err, html) {
+                translator
+                    .translate(html, function (translatedHTML) {
+                        callback(err, translatedHTML);
+                    });
+            });
+        });
+    };
 
     function md5(str) {
         return crypto
