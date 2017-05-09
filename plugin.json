@@ -25,11 +25,11 @@
         },
         {
             "hook": "filter:widget.render:category-widget",
-            "method": "render"
+            "method": "renderCategoryWidget"
         },
         {
             "hook": "filter:widget.render:custom-recent-topics",
-            "method": "renderRecentTopicsWidget"
+            "method": "renderCustomTopicsWidget"
         }
     ],
     "templates": "./templates",

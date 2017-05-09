@@ -36,7 +36,6 @@
         .require('./controllers/authentication');
     var path = require('path');
     var crypto = require('crypto');
-    // var secret = require('./config.json').secret;
     var express = module
         .parent
         .require('express');
@@ -47,7 +46,6 @@
         app = params.app;
         middleware = params.middleware;
         console.log('-----------------u77 connect-----------------');
-        // var pagesRouter = express.Router();
         var helpers = module
             .parent
             .require('./routes/helpers');
@@ -58,7 +56,6 @@
     }
 
     U77Connect.routeFilter = function (req, res, next) {
-        // controllers.register(req,res,next);
         next();
     }
 
@@ -73,7 +70,6 @@
     function loadWidgetTemplate(template, next) {
         var __dirname = "./node_modules/nodebb-plugin-u77-connect";
         var templateFile = path.resolve(__dirname, template);
-        // winston.info("Loading templateFile: " + templateFile);
 
         fs.readFile(templateFile, function (err, data) {
             if (err) {
@@ -84,15 +80,8 @@
         });
     }
 
+    // define widgets
     U77Connect.getWidgets = function (widgets, next) {
-        // loadWidgetTemplate('./templates/u77-connect/admin/category.tpl', function
-        // (templateData) { widgets = widgets.concat([     {         widget:
-        // "category-widget",         name: "Category Widget",         description:
-        // "Renders the specific category",         content:
-        // 'u77-connect/admin/category'     }, {         widget: "custom-recent-topics",
-        //         name: "Custom Recent Topics",         description: "Lists the latest
-        // topics on your forum.",         content: 'u77-connect/admin/recenttopics'
-        // } ]);
 
         async
             .map([
@@ -117,11 +106,10 @@
                 widgets = widgets.concat(_widgets);
                 next(err, widgets);
             });
-
-        // });
     },
 
-    U77Connect.render = function (params, callback) {
+    // category widget render function
+    U77Connect.renderCategoryWidget = function (params, callback) {
         var categoryController = controllers.category;
         try {
             params.req.params = {
@@ -163,7 +151,8 @@
 
     }
 
-    U77Connect.renderRecentTopicsWidget = function (widget, callback) {
+    // custom topics widget render function
+    U77Connect.renderCustomTopicsWidget = function (widget, callback) {
         var numTopics = (widget.data.numTopics || 8) - 1;
         var cid = widget.data.cid || 1
         var payload = {
@@ -179,16 +168,17 @@
             if (err) {
                 return callback(err);
             }
-            app.render('u77-connect/recenttopics', {
-                topics: data.topics,
-                numTopics: numTopics,
-                relative_path: nconf.get('relative_path')
-            }, function (err, html) {
-                translator
-                    .translate(html, function (translatedHTML) {
-                        callback(err, translatedHTML);
-                    });
-            });
+            app
+                .render('u77-connect/recenttopics', {
+                    topics: data.topics,
+                    numTopics: numTopics,
+                    relative_path: nconf.get('relative_path')
+                }, function (err, html) {
+                    translator
+                        .translate(html, function (translatedHTML) {
+                            callback(err, translatedHTML);
+                        });
+                });
         });
     };
 
