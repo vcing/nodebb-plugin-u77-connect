@@ -21,7 +21,8 @@
         },
         {
             "hook": "filter:widgets.getWidgets",
-            "method": "getWidgets"
+            "method": "getWidgets",
+            "callbacked": true
         },
         {
             "hook": "filter:widget.render:category-widget",

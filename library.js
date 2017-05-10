@@ -110,6 +110,7 @@
 
     // category widget render function
     U77Connect.renderCategoryWidget = function (params, callback) {
+        console.log(params);
         var categoryController = controllers.category;
         try {
             params.req.params = {
