@@ -129,7 +129,8 @@
             params.res.render = function (template, data) {
                 _render
                     .call(params.res, 'u77-connect/category', data, function (err, html) {
-                        callback(err, html);
+                        params.html = html;
+                        callback(err, params);
                     });
             }
 
@@ -177,7 +178,8 @@
                 }, function (err, html) {
                     translator
                         .translate(html, function (translatedHTML) {
-                            callback(err, translatedHTML);
+                            widget.html = translatedHTML;
+                            callback(err, widget);
                         });
                 });
         });
