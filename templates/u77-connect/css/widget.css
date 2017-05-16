@@ -1,0 +1,2064 @@
+@media only screen and (max-width:767px) {
+    section.app-show-main {
+        margin-bottom: 15px
+    }
+}
+
+section.app-show-main .show-main-header {
+    position: relative;
+    margin: 0 0 16px;
+    padding: 30px 30px 0;
+    background: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .15)
+}
+
+section.app-show-main .show-main-header::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+section.app-show-main .show-main-header .main-header-icon {
+    float: left;
+    width: 180px
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    section.app-show-main .show-main-header .main-header-icon {
+        width: 128px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .main-header-icon {
+        float: none;
+        margin: 0 auto 20px;
+        width: 128px
+    }
+}
+
+section.app-show-main .show-main-header .main-header-icon .header-icon-body {
+    position: relative
+}
+
+section.app-show-main .show-main-header .main-header-icon .header-icon-body>img {
+    width: 100%
+}
+
+section.app-show-main .show-main-header .main-header-icon .header-icon-body .mask {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+section.app-show-main .show-main-header .main-header-icon .main-header-rec {
+    padding: 15px 0 15px 50px
+}
+
+@media only screen and (max-width:991px) {
+    section.app-show-main .show-main-header .main-header-icon .main-header-rec {
+        padding: 15px 0 5px 25px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .main-header-icon .main-header-rec {
+        padding: 15px 0 0;
+        text-align: center
+    }
+}
+
+section.app-show-main .show-main-header .main-header-icon .main-header-rec>span {
+    padding: 3px 14px;
+    background-color: #b4ebfa;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #14B9C8
+}
+
+section.app-show-main .show-main-header .main-header-text {
+    position: relative;
+    margin-left: 200px;
+    width: 384px;
+    height: 180px
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    section.app-show-main .show-main-header .main-header-text {
+        width: 312px
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    section.app-show-main .show-main-header .main-header-text {
+        margin-left: 143px;
+        /*width: 240px;*/
+        height: auto
+    }
+}
+
+section.app-show-main .show-main-header .main-header-text>h1 {
+    display: inline-block;
+    margin: 0;
+    line-height: 30px;
+    max-height: 60px;
+    vertical-align: top;
+    font-size: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 90%
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    section.app-show-main .show-main-header .main-header-text>h1 {
+        line-height: 25px;
+        max-height: 50px;
+        font-size: 20px
+    }
+}
+
+section.app-show-main .show-main-header .main-header-text .taptap-app-area {
+    line-height: 16px
+}
+
+@media only screen and (max-width:991px) {
+    section.app-show-main .show-main-header .main-header-text .taptap-app-area {
+        display: none
+    }
+}
+
+section.app-show-main .show-main-header .main-header-text>h2 {
+    margin: 0;
+    font-size: 12px;
+    color: #999
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-author {
+    display: block;
+    white-space: nowrap
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-author a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    margin-left: 0
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-author>a,
+section.app-show-main .show-main-header .main-header-text .header-text-author>span {
+    font-size: 12px;
+    color: #14B9C8
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-children-tips {
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    bottom: 70px
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .main-header-text {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        text-align: center
+    }
+    section.app-show-main .show-main-header .main-header-text .header-text-children-tips {
+        position: static
+    }
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-children-tips>span {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: url(http://img.u77.com/game/201705/150927bfhioor65kp9xcr9.png) 0 -516px no-repeat;
+    background-size: 52px;
+    margin-right: 2px;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%)
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text::after,
+section.app-show-main .show-main-header .main-header-text .header-text-download::after {
+    display: table;
+    content: "";
+    clear: both
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download {
+    position: absolute;
+    bottom: 0;
+    width: 115%
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    section.app-show-main .show-main-header .main-header-text .header-text-download {
+        width: 124%
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    section.app-show-main .show-main-header .main-header-text .header-text-download {
+        margin: 13px 0 0 -143px
+    }
+    section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text {
+        padding-left: 10px
+    }
+}
+
+@media only screen and (max-width:991px) {
+    section.app-show-main .show-main-header .main-header-text .header-text-download {
+        position: static;
+        width: auto
+    }
+    section.app-show-main .show-main-header .main-header-text .header-text-download .taptap-button-download button:first-child {
+        margin-left: 0
+    }
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text {
+    margin: 0;
+    color: #666;
+    overflow: hidden
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .main-header-text .header-text-download {
+        margin: 0;
+        text-align: center
+    }
+    section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text {
+        display: block;
+        margin: 0 0 10px;
+        padding: 0;
+        text-align: center
+    }
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text .text-download-rating {
+    float: left;
+    position: relative;
+    margin: 0;
+    height: 14px;
+    line-height: 14px
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text .text-download-rating {
+        width: 95px;
+        margin: 2px auto;
+        float: none
+    }
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text .text-download-rating>i {
+    display: block
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text .text-download-rating>i.background {
+    float: left;
+    margin-top: -1px;
+    opacity: .32;
+    display: block;
+    width: 70px;
+    height: 14px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAQAAADYBBcfAAAA90lEQVQ4y93UPQrCMBTA8eAFdCooghZXwV0PoPfQvUdwEbroVCn8Bydv0MVB7yAuCqIgiFcQQepzET/ThLpp3vbID17eS6LUPyzqNL6DEdE3rMqFC9X0cIwgjNOyMmcE4Uw5HRwitximYQ7HOzzi2LZncGniETK/M0GYE+LRxCXzibosOL1s18WJBd334lZWJgjLj8IpsLayNQXdGYtsjWxDMak9JXaJbEfJ1NkKey3bU7ENJdDCwD78mRZO7fCghQcbyyU2J2t79Y872qP3dGfrZthBEGJG5JVSijwjYgShbYYDhAm1l1yNCULfDH1a2nwL/2d/3SuVL2Mp5zjvIgAAAABJRU5ErkJggg==) repeat-x;
+    background-size: 14px
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text .text-download-rating>i.score {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    display: block;
+    width: 70px;
+    height: 14px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAABD0lEQVR4Ae3TMWoCURCA4YcXSIrwQBFUbAX7zQH0HknvEWwCNkml2Fl5gzQSkgOkE5sEJAFBvMIiiJn8xVQLG3YyrATiwAev+4t5E/7EnOfq6TXBNYKVPswe1UmCHXypzimCc4ialx1s4gBRBzTLDE4gGZOyghEpJCNF9AYraKGHAaZYQnIsMcUAPbRQKRIcYoU9xGmPFYY/BSPeIV7qDTE3qGpYQ5zWqBXdYR2fjtgH6tZf2sAGYrRB47dn0cbWENui7b3DsSE4RvAGXwzBZ3cQO0Nw5w1eQowuPMEEkpHiTqWQjMQTvIWoI2aoIqgqZjhC1I0n+ADBAl2EHF0sILj3BEfoIxTUx8gRdPi3wW/dLgzWif1T1AAAAABJRU5ErkJggg==) repeat-x;
+    background-size: 14px
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text .text-download-rating>i.score+span {
+    margin-left: 72px
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text .text-download-rating>span {
+    display: block;
+    vertical-align: middle;
+    line-height: 14px
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text .text-download-times {
+    float: left;
+    display: block;
+    padding: 4px 0;
+    line-height: 23px;
+    color: #999;
+    height: 31px
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text .text-download-times {
+        height: 23px;
+        line-height: 23px;
+        float: none
+    }
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text .text-hints {
+    float: left;
+    display: block;
+    padding: 0 0 0 10px;
+    line-height: 30px;
+    font-size: 12px;
+    height: 31px;
+    color: #14B9C8
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text .text-hints {
+        float: none;
+        height: 14px;
+        line-height: 12px;
+        margin: 5px 0;
+        padding: 0
+    }
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download>.btn,
+section.app-show-main .show-main-header .main-header-text section.developer-app-submit .app-submit-main.form>form .form-footer .header-text-download>.btn-save-verifying,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-header .main-header-text .header-text-download>.btn-save-verifying {
+    margin-top: 10px
+}
+
+section.app-show-main .show-main-header .app-rating-block {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background: url(../img/background/rating@2x.png) 0 -92px no-repeat;
+    background-size: 80px;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 30px;
+    right: 20px
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .app-rating-block {
+        background-size: 72px;
+        background-position-y: -81px;
+        height: 65px;
+        width: 65px;
+        right: calc(((100vw - 148px)/ 2 - 65px)/ 2)
+    }
+}
+
+section.app-show-main .show-main-header .app-rating-block .app-rating-container {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    display: inline-block
+}
+
+section.app-show-main .show-main-header .app-rating-block .app-rating-score {
+    position: absolute;
+    width: inherit;
+    display: inline-block;
+    bottom: 21px;
+    left: 0;
+    text-align: center;
+    font-size: 27px;
+    text-shadow: 0 1px rgba(0, 0, 0, .15);
+    letter-spacing: -.5px
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .app-rating-block .app-rating-score {
+        bottom: 17px;
+        font-size: 26px;
+        letter-spacing: -1px
+    }
+}
+
+section.app-show-main .show-main-header .app-rating-no-score {
+    top: 30px;
+    right: 20px;
+    color: #999;
+    font-size: 12px;
+    position: absolute
+}
+
+section.app-show-main .show-main-header .main-header-tab {
+    clear: both;
+    margin: 30px -30px 0;
+    border-top: 1px solid #eee
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .main-header-tab {
+        margin-top: 15px;
+        padding: 0;
+        background: 0 0
+    }
+    section.app-show-main .show-main-header .main-header-tab .nav>li {
+        float: left;
+        margin: 0;
+        width: 33.3333333333%
+    }
+}
+
+section.app-show-main .show-main-header .main-header-tab .nav>li:nth-child(2)>a {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee
+}
+
+section.app-show-main .show-main-header .main-header-tab .nav>li.active>a {
+    color: #14B9C8;
+    border-bottom-color: #14B9C8
+}
+
+section.app-show-main .show-main-header .main-header-tab .nav>li>a {
+    padding: 12px 11px 8px;
+    line-height: 25px;
+    max-height: 49px;
+    font-size: 18px;
+    color: #333;
+    border-radius: 0;
+    border-bottom: 4px solid transparent;
+    background: 0 0
+}
+
+section.app-show-main .show-main-header .main-header-tab .nav>li>a:hover,
+section.app-show-main .show-main-header .taptap-button-collect>span:hover {
+    color: #14B9C8
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .main-header-tab .nav>li>a {
+        padding: 12px 0 8px;
+        font-size: 16px;
+        margin: 0;
+        background: #fff
+    }
+}
+
+section.app-show-main .show-main-header .main-header-tab .nav>li>a>small {
+    font-size: 12px
+}
+
+section.app-show-main .show-main-header .taptap-button-collect {
+    background: 0 0;
+    border-color: transparent;
+    float: left;
+    padding-left: 0;
+    padding-right: 8px
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-header .taptap-button-collect {
+        float: none;
+        position: absolute;
+        top: 27px;
+        right: 10px
+    }
+}
+
+section.app-show-main .show-main-header .taptap-button-collect:hover {
+    background-color: transparent;
+    border-color: transparent
+}
+
+section.app-show-main .show-main-header .taptap-button-collect+.tooltip {
+    top: 0!important
+}
+
+section.app-show-main .show-main-header .taptap-button-collect>i {
+    float: left;
+    margin-right: 5px
+}
+
+section.app-show-main .show-main-header .taptap-button-collect>span {
+    float: right;
+    padding-top: 1px;
+    color: #14B9C8
+}
+
+.taptap-button-download {
+    float: left;
+    position: relative
+}
+
+@media only screen and (max-width:767px) {
+    .taptap-button-download {
+        float: none;
+        padding: 0 5px;
+        text-align: center
+    }
+    .taptap-button-download+.taptap-download-btn {
+        margin: 10px 0 0
+    }
+}
+
+.taptap-button-download .btn,
+.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
+section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying {
+    padding: 7px 15px;
+    min-width: 130px;
+    line-height: 24px;
+    font-size: 14px
+}
+
+.taptap-button-download .btn::after,
+.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying::after,
+section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .taptap-button-download .btn,
+    .taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
+    section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying {
+        padding: 8px 10px
+    }
+}
+
+.taptap-button-download .btn.ios,
+.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .ios.btn-save-verifying,
+section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .ios.btn-save-verifying {
+    margin-left: 10px
+}
+
+@media only screen and (max-width:767px) {
+    .taptap-button-download .btn,
+    .taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
+    section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying {
+        padding: 8px
+    }
+    .taptap-button-download .btn.ios,
+    .taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .ios.btn-save-verifying,
+    section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .ios.btn-save-verifying {
+        margin: 10px 0
+    }
+}
+
+.taptap-button-download .btn.disabled,
+.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .disabled.btn-save-verifying,
+section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .disabled.btn-save-verifying {
+    pointer-events: none;
+    cursor: default
+}
+
+.taptap-button-download .btn>span,
+.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying>span,
+section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying>span {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle
+}
+
+.taptap-button-download .btn>i,
+.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying>i,
+section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying>i {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle
+}
+
+.taptap-button-download .btn-primary.android {
+    position: relative
+}
+
+.taptap-button-download .btn-primary.android .button-tip {
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    font-size: 10px;
+    line-height: 13px;
+    height: 13px;
+    color: #fff;
+    background: #ED9E1D;
+    z-index: 1;
+    font-style: normal;
+    width: 28px;
+    border-radius: 1px 3px 1px 1px;
+    box-shadow: -1px 1px 2px 0 rgba(0, 0, 0, .1)
+}
+
+.taptap-button-download .btn-primary.android .button-tip.chrome {
+    -webkit-transform: scale(.7);
+    line-height: 17px;
+    height: 18px;
+    top: -3.7px;
+    right: -6.2px;
+    width: 34px
+}
+
+.taptap-button-download .btn-primary.android:hover .button-tip {
+    color: #E39412;
+    background: #FFEBC9
+}
+
+.taptap-button-download .btn-primary.android:hover>i {
+    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px 0 no-repeat;
+    background-size: 100px
+}
+
+.taptap-button-download .btn-primary.android>i {
+    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) no-repeat;
+    background-size: 100px
+}
+
+.taptap-button-download .btn-primary.ios:hover>i {
+    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px -90px no-repeat;
+    background-size: 100px
+}
+
+.taptap-button-download .btn-primary.ios>i {
+    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) 0 -90px no-repeat;
+    background-size: 100px
+}
+
+.taptap-button-download .btn-default,
+.taptap-button-download .btn-default:active,
+.taptap-button-download .btn-default:focus,
+.taptap-button-download .btn-default:hover {
+    color: #fff;
+    background: #BFBFBF;
+    border-color: #BFBFBF;
+    cursor: auto
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .taptap-button-download .btn-primary {
+        padding: 8px 20px
+    }
+    .taptap-button-download .btn-default {
+        padding: 8px 9px;
+        min-width: 0
+    }
+}
+
+.taptap-button-download .btn-default.android>i {
+    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -52px 0 no-repeat;
+    background-size: 100px
+}
+
+.taptap-button-download .btn-default.ios>i {
+    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) 0 -90px no-repeat;
+    background-size: 100px
+}
+
+.taptap-button-download .btn-hollow {
+    color: #14B9C8;
+    border-color: #14B9C8
+}
+
+.taptap-button-download .btn-hollow.android>i {
+    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px 0 no-repeat;
+    background-size: 100px
+}
+
+.taptap-button-download .btn-hollow.ios>i {
+    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px -90px no-repeat;
+    background-size: 100px
+}
+
+.taptap-button-download .btn-link {
+    margin-top: 5px;
+    min-width: 0;
+    line-height: 14px;
+    font-size: 12px;
+    text-align: left;
+    color: #999;
+    border: none
+}
+
+.taptap-button-download .btn-link:active,
+.taptap-button-download .btn-link:focus,
+.taptap-button-download .btn-link:hover {
+    text-decoration: none
+}
+
+.taptap-button-download .btn-link.ios {
+    margin-left: 20px;
+    padding: 16px 0 0 27px;
+    width: 86px;
+    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) 0 -26px no-repeat;
+    background-size: 100px
+}
+
+@media only screen and (max-width:767px) {
+    .taptap-button-download .btn-link.ios {
+        margin-left: 0
+    }
+}
+
+.taptap-button-download .btn-link.android {
+    margin-left: 10px;
+    padding: 16px 0 0 31px;
+    width: 100px;
+    text-align: left;
+    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) 0 -58px no-repeat;
+    background-size: 100px
+}
+
+.taptap-button-download .sell_price {
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    color: #999;
+    display: block;
+    text-align: center;
+    padding: 4px 0
+}
+
+@media only screen and (max-width:767px) {
+    .taptap-button-download .btn-link.android {
+        margin-left: 0
+    }
+    .taptap-button-download .sell_price {
+        position: static;
+        width: auto
+    }
+}
+
+section.app-show-main .show-main-body {
+    position: relative;
+    margin-top: 15px;
+    background: #fff;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .15)
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body {
+        padding: 0!important
+    }
+}
+
+section.app-show-main .show-main-body.first {
+    margin-top: 0
+}
+
+div.user-home-side section.app-show-main .show-main-body.first .section-title-developer>small,
+section.app-show-main .show-main-body.first .section-title>small,
+section.app-show-main .show-main-body.first div.user-home-side .section-title-developer>small {
+    display: block
+}
+
+div.user-home-side section.app-show-main .show-main-body.first .section-title-developer .pull-right,
+section.app-show-main .show-main-body.first .section-title .pull-right,
+section.app-show-main .show-main-body.first div.user-home-side .section-title-developer .pull-right {
+    display: none
+}
+
+section.app-show-main .show-main-body.first .main-body-topics>ul>li:nth-child(n+6),
+section.app-show-main .show-main-body.first .taptap-review-section>ul>li:nth-child(n+6) {
+    display: block!important
+}
+
+section.app-show-main .show-main-body.first .main-body-topics>ul>li:nth-child(n+6).collapse:not(.in),
+section.app-show-main .show-main-body.first .taptap-review-section>ul>li:nth-child(n+6).collapse:not(.in) {
+    display: none!important
+}
+
+section.app-show-main .show-main-body.first .main-body-topics .taptap-button-more,
+section.app-show-main .show-main-body.first .taptap-review-section .taptap-button-more,
+section.app-show-main .show-main-body.first .taptap-review-section .taptap-review-title>ul {
+    display: block
+}
+
+section.app-show-main .show-main-body.first .taptap-review-section .taptap-review-title .pull-right {
+    display: none
+}
+
+section.app-show-main .show-main-body.first .main-body-footer,
+section.app-show-main .show-main-body.first .taptap-review-section .taptap-review-title .filter-review {
+    display: block
+}
+
+section.app-show-main .show-main-body.first .main-body-none,
+section.app-show-main .show-main-body.first .main-body-topics {
+    margin-bottom: 0
+}
+
+section.app-show-main .show-main-body.first .main-body-footer .taptap-button-more {
+    padding: 24px 0
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body {
+        padding-top: 15px
+    }
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer,
+section.app-show-main .show-main-body .section-title,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer {
+    margin-bottom: 15px;
+    padding: 20px 30px 0;
+    border-top: 1px solid #eee;
+    border-bottom: none
+}
+
+@media only screen and (max-width:767px) {
+    div.user-home-side section.app-show-main .show-main-body .section-title-developer,
+    section.app-show-main .show-main-body .section-title,
+    section.app-show-main .show-main-body div.user-home-side .section-title-developer {
+        padding: 15px 15px 0
+    }
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer>h3,
+section.app-show-main .show-main-body .section-title>h3,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer>h3 {
+    margin: 0
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer>small,
+section.app-show-main .show-main-body .section-title>small,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer>small {
+    display: none;
+    margin: 4px 0 0 15px
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer>small>a,
+section.app-show-main .show-main-body .section-title>small>a,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer>small>a {
+    display: block;
+    margin-top: -4px;
+    font-size: 14px;
+    color: #14B9C8
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer>small>a:active,
+div.user-home-side section.app-show-main .show-main-body .section-title-developer>small>a:focus,
+div.user-home-side section.app-show-main .show-main-body .section-title-developer>small>a:hover,
+section.app-show-main .show-main-body .section-title>small>a:active,
+section.app-show-main .show-main-body .section-title>small>a:focus,
+section.app-show-main .show-main-body .section-title>small>a:hover,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer>small>a:active,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer>small>a:focus,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer>small>a:hover {
+    text-decoration: none
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer>small>a:active>span,
+div.user-home-side section.app-show-main .show-main-body .section-title-developer>small>a:focus>span,
+div.user-home-side section.app-show-main .show-main-body .section-title-developer>small>a:hover>span,
+section.app-show-main .show-main-body .section-title>small>a:active>span,
+section.app-show-main .show-main-body .section-title>small>a:focus>span,
+section.app-show-main .show-main-body .section-title>small>a:hover>span,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer>small>a:active>span,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer>small>a:focus>span,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer>small>a:hover>span {
+    text-decoration: underline
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer>small>a>span,
+section.app-show-main .show-main-body .section-title>small>a>span,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer>small>a>span {
+    display: inline-block;
+    vertical-align: middle
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer .pull-right,
+section.app-show-main .show-main-body .section-title .pull-right,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer .pull-right {
+    line-height: 20px;
+    font-size: 12px
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer .pull-right>small,
+section.app-show-main .show-main-body .section-title .pull-right>small,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer .pull-right>small {
+    font-size: 100%;
+    color: #14B9C8
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review,
+section.app-show-main .show-main-body .section-title .filter-review,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review {
+    display: none;
+    float: right;
+    margin-top: 0
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .taptap-button-opinion .glyphicon,
+section.app-show-main .show-main-body .section-title .filter-review .taptap-button-opinion .glyphicon,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review .taptap-button-opinion .glyphicon {
+    float: right;
+    margin-left: 4px;
+    margin-top: 6px
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .dropdown-menu,
+section.app-show-main .show-main-body .section-title .filter-review .dropdown-menu,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review .dropdown-menu {
+    left: auto;
+    right: 0;
+    min-width: auto;
+    padding: 10px 0;
+    margin: 0
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .dropdown-menu li,
+section.app-show-main .show-main-body .section-title .filter-review .dropdown-menu li,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review .dropdown-menu li {
+    padding: 4px 0;
+    line-height: 20px;
+    font-size: 14px
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .dropdown-menu li:hover,
+section.app-show-main .show-main-body .section-title .filter-review .dropdown-menu li:hover,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review .dropdown-menu li:hover {
+    color: #14B9C8
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .dropdown-menu li.divider,
+section.app-show-main .show-main-body .section-title .filter-review .dropdown-menu li.divider,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review .dropdown-menu li.divider {
+    padding: 0;
+    margin: 4px 0;
+    background-color: #eee
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .dropdown-menu li.current a,
+section.app-show-main .show-main-body .section-title .filter-review .dropdown-menu li.current a,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review .dropdown-menu li.current a {
+    color: #14B9C8
+}
+
+div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .dropdown-menu li a,
+section.app-show-main .show-main-body .section-title .filter-review .dropdown-menu li a,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review .dropdown-menu li a {
+    padding: 5px 15px
+}
+
+section.app-show-main .show-main-body .main-body-demo {
+    padding: 20px 30px;
+    color: #fff;
+    background: #14B9C8
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-demo {
+        margin-top: -15px
+    }
+}
+
+section.app-show-main .show-main-body .main-body-demo>h3 {
+    margin: 0 0 10px;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: 700
+}
+
+section.app-show-main .show-main-body .main-body-demo>h3 .pull-right {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff
+}
+
+section.app-show-main .show-main-body .main-body-demo>p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, .6)
+}
+
+section.app-show-main .show-main-body .main-body-developer {
+    padding: 20px 30px;
+    border-bottom: 1px solid #eee
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-developer {
+        padding: 15px
+    }
+}
+
+section.app-show-main .show-main-body .main-body-developer .text-wrapper {
+    transition: all .3s
+}
+
+section.app-show-main .show-main-body .main-body-developer .text-wrapper>h3 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #999
+}
+
+section.app-show-main .show-main-body .main-body-developer .text-wrapper>p {
+    margin-bottom: 0;
+    word-wrap: break-word;
+    word-break: break-word
+}
+
+section.app-show-main .show-main-body .main-body-developer .text-wrapper.collapse {
+    display: block;
+    height: 225px;
+    overflow: hidden
+}
+
+section.app-show-main .show-main-body .main-body-developer .text-wrapper.collapse+.body-description-more {
+    display: block
+}
+
+section.app-show-main .show-main-body .main-body-developer .text-wrapper .body-description-more {
+    display: none
+}
+
+section.app-show-main .show-main-body .main-body-developer.main-body-description {
+    margin-bottom: 0
+}
+
+section.app-show-main .show-main-body .main-body-reason {
+    padding: 5px 0 20px;
+    border-bottom: 1px solid #eee
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-reason .section-title-developer,
+section.app-show-main .show-main-body .main-body-reason .section-title,
+section.app-show-main .show-main-body .main-body-reason div.user-home-side .section-title-developer {
+    border: none
+}
+
+section.app-show-main .show-main-body .main-body-reason>p {
+    margin-bottom: 0;
+    padding: 0 30px;
+    line-height: 25px
+}
+
+section.app-show-main .show-main-body .main-body-number {
+    padding: 15px 30px;
+    border-bottom: 1px solid #eee
+}
+
+section.app-show-main .show-main-body .main-body-number::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-number {
+        padding: 15px
+    }
+}
+
+section.app-show-main .show-main-body .main-body-number>p {
+    float: left;
+    margin: 0;
+    font-size: 14px;
+    color: #333
+}
+
+section.app-show-main .show-main-body .main-body-number>span {
+    display: block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    padding: 3px 0 0 3px;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer
+}
+
+section.app-show-main .show-main-body .main-body-images {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 30px 30px 0
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal {
+    position: relative;
+    /*width: 628px;*/
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+@media only screen and (max-width:1199px) {
+    section.app-show-main .show-main-body .main-body-images .body-images-normal {
+        /*width: 562px*/
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    section.app-show-main .show-main-body .main-body-images .body-images-normal {
+        /*width: 416px;*/
+        width: 100%;
+        height: 214px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-images {
+        padding: 15px 15px 7.5px;
+        margin-bottom: 7.5px
+    }
+    section.app-show-main .show-main-body .main-body-images .body-images-normal {
+        width: 100%;
+        height: 138px!important
+    }
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled {
+    height: 100%;
+    margin: 0;
+    font-size: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    padding-right: 10px;
+    vertical-align: middle
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li:last-child {
+    padding-right: 0
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .video-js {
+    width: 497px!important;
+    height: 100%!important
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .video-js.vjs-fullscreen {
+    width: 100%!important;
+    height: 100%!important
+}
+
+@media only screen and (max-width:991px) {
+    section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .video-js {
+        width: 380px!important
+    }
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .video-js {
+        width: 245px!important
+    }
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn,
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn-save-verifying {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -30px;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: #000;
+    background: rgba(0, 0, 0, .6);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn:active,
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn:focus,
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn:hover,
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying:active,
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying:focus,
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying:hover,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn-save-verifying:active,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn-save-verifying:focus,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn-save-verifying:hover {
+    color: #fff;
+    background: #14B9C8!important
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn>span,
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying>span,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn-save-verifying>span {
+    font-size: 30px
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li>a {
+    display: block;
+    height: 100%;
+    z-index: 2
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li>a>img {
+    height: 100%;
+    border: 1px solid #eee
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .body-images-control {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    height: 280px;
+    top: 0;
+    margin-bottom: -27.5px;
+    width: 30px;
+    opacity: 0;
+    cursor: pointer;
+    text-decoration: none;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    transition: all .3s ease-in-out 0s;
+    background: #333;
+    background: rgba(51, 51, 51, .8);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC333333, endColorstr=#CC333333)"
+}
+
+@media only screen and (max-width:991px) {
+    section.app-show-main .show-main-body .main-body-images .body-images-normal .body-images-control {
+        display: none
+    }
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .body-images-control.prev {
+    left: 0
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .body-images-control.next {
+    right: 0
+}
+
+section.app-show-main .show-main-body .main-body-images .body-images-normal .body-images-control>i {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    left: 3px
+}
+
+section.app-show-main .show-main-body .main-body-images .checkbox {
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    margin: 0;
+    color: #999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out 0s
+}
+
+section.app-show-main .show-main-body .main-body-images .checkbox.active {
+    opacity: 1;
+    visibility: visible
+}
+
+section.app-show-main .show-main-body .main-body-additional {
+    padding: 0 30px
+}
+
+section.app-show-main .show-main-body .main-body-additional::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-images .checkbox {
+        position: static;
+        margin: 5px 0 0
+    }
+    section.app-show-main .show-main-body .main-body-additional {
+        padding: 7.5px 15px 0;
+        margin-bottom: 0
+    }
+    section.app-show-main .show-main-body .main-body-additional>li>span {
+        line-height: 18px;
+        font-size: 12px
+    }
+}
+
+section.app-show-main .show-main-body .main-body-additional>li {
+    float: left;
+    margin-bottom: 10px;
+    width: 33.3333333333%;
+    white-space: nowrap
+}
+
+@media only screen and (max-width:991px) {
+    section.app-show-main .show-main-body .main-body-additional>li {
+        width: 50%
+    }
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i,
+section.app-show-main .show-main-body .main-body-additional>li>span {
+    display: inline-block;
+    vertical-align: middle
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: url(http://img.u77.com/game/201705/15092710rbkaymnukklkvk.png) no-repeat #14B9C8;
+    background-size: 28px
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.lang-ko_KR {
+    background-position: 0 -30px
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.lang-ja_JP {
+    background-position: 0 -60px
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.lang-zh_CN {
+    background-position: 0 -90px
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.lang-en_US {
+    background-position: 0 -120px
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.network-no {
+    background-position: 0 -270px;
+    background-color: #ccc
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.network-yes {
+    background-position: 0 -240px
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.proxy-no {
+    background-position: 0 -210px;
+    background-color: #ccc
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.proxy-yes {
+    background-position: 0 -210px
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.play_support-no {
+    background-position: 0 -180px;
+    background-color: #ccc
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.play_support-yes {
+    background-position: 0 -180px
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.in_app_purchase-yes {
+    background-position: 0 -150px
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>i.vr-yes {
+    background-position: 0 -300px
+}
+
+section.app-show-main .show-main-body .main-body-additional>li>span {
+    margin-left: 5px
+}
+
+section.app-show-main .show-main-body .main-body-description {
+    margin-bottom: 20px
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .taptap-button-share,
+section.app-show-main .show-main-body .main-body-description .section-title .taptap-button-share,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .taptap-button-share {
+    float: left;
+    margin-left: 20px
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .taptap-button-share>span,
+section.app-show-main .show-main-body .main-body-description .section-title .taptap-button-share>span,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .taptap-button-share>span {
+    display: none
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right {
+    display: block!important
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right>a,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right>a,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right>a {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: middle;
+    font-size: 14px
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion {
+    padding: 0;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:active,
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:focus,
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:hover,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:active,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:focus,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:hover,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:active,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:focus,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:hover {
+    background: 0 0
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:active>span,
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:focus>span,
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:hover>span,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:active>span,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:focus>span,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:hover>span,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:active>span,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:focus>span,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:hover>span {
+    text-decoration: underline
+}
+
+section.app-show-main .show-main-body .main-body-description .body-description-paragraph {
+    position: relative;
+    padding: 0 30px;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+    transition: all .5s ease-in-out 0s
+}
+
+section.app-show-main .show-main-body .main-body-description .body-description-paragraph.collapse {
+    display: block;
+    height: 125px
+}
+
+section.app-show-main .show-main-body .main-body-description .body-description-paragraph.collapse .description-paragraph-end,
+section.app-show-main .show-main-body .main-body-description .body-description-paragraph.collapse+.body-description-more {
+    display: block
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-description {
+        margin-top: 7.5px
+    }
+    section.app-show-main .show-main-body .main-body-description .body-description-paragraph {
+        padding: 0 15px
+    }
+}
+
+section.app-show-main .show-main-body .main-body-description .body-description-paragraph>p {
+    margin-bottom: 0;
+    line-height: 25px
+}
+
+section.app-show-main .show-main-body .main-body-description .description-paragraph-end {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #fff);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=rgba(255, 255, 255, 0), endColorstr=white)"
+}
+
+section.app-show-main .show-main-body .main-body-description .body-description-more {
+    position: relative;
+    display: none;
+    text-align: center
+}
+
+section.app-show-main .show-main-body .main-body-description .body-description-more .description-paragraph-end {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    display: block;
+    top: -30px
+}
+
+section.app-show-main .show-main-body .main-body-description .body-description-more .btn,
+section.app-show-main .show-main-body .main-body-description .body-description-more section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-description .body-description-more .btn-save-verifying {
+    border-radius: 3px;
+    color: #333
+}
+
+section.app-show-main .show-main-body .main-body-description .body-description-more .btn:active,
+section.app-show-main .show-main-body .main-body-description .body-description-more .btn:focus,
+section.app-show-main .show-main-body .main-body-description .body-description-more .btn:hover,
+section.app-show-main .show-main-body .main-body-description .body-description-more section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying:active,
+section.app-show-main .show-main-body .main-body-description .body-description-more section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying:focus,
+section.app-show-main .show-main-body .main-body-description .body-description-more section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying:hover,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-description .body-description-more .btn-save-verifying:active,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-description .body-description-more .btn-save-verifying:focus,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-description .body-description-more .btn-save-verifying:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #14B9C8
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list>li>span.info-item-content,
+section.app-show-main .show-main-body .main-body-none>p:last-child {
+    color: #666
+}
+
+section.app-show-main .show-main-body .main-body-log {
+    margin-bottom: 20px
+}
+
+section.app-show-main .show-main-body .main-body-log .body-log-list {
+    transition: all .3s;
+    margin-bottom: 0;
+    padding: 0 30px;
+    word-wrap: break-word;
+    word-break: break-word
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-log .body-log-list {
+        padding: 0 15px
+    }
+}
+
+section.app-show-main .show-main-body .main-body-log .body-log-list.collapse {
+    display: block;
+    height: 225px;
+    overflow: hidden
+}
+
+section.app-show-main .show-main-body .main-body-log .body-log-list.collapse+.body-description-more {
+    display: block
+}
+
+section.app-show-main .show-main-body .main-body-log .body-log-list .body-description-more {
+    display: none
+}
+
+section.app-show-main .show-main-body .main-body-log .body-log-list>li {
+    line-height: 25px
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-info .section-title-developer .pull-right,
+section.app-show-main .show-main-body .main-body-info .section-title .pull-right,
+section.app-show-main .show-main-body .main-body-info div.user-home-side .section-title-developer .pull-right {
+    display: block!important
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-info .section-title-developer .pull-right>a,
+section.app-show-main .show-main-body .main-body-info .section-title .pull-right>a,
+section.app-show-main .show-main-body .main-body-info div.user-home-side .section-title-developer .pull-right>a {
+    font-size: 14px;
+    color: #666
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list {
+    margin-bottom: 0;
+    padding: 0 30px 10px
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list>li {
+    float: left;
+    margin-bottom: 10px;
+    width: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-info .body-info-list {
+        padding: 0 15px
+    }
+    section.app-show-main .show-main-body .main-body-info .body-info-list>li {
+        width: 50%
+    }
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list>li>span {
+    display: block
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list>li>span.info-item-title {
+    margin-bottom: 5px;
+    font-weight: 700
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list>li>a {
+    text-decoration: underline
+}
+
+section.app-show-main .show-main-body .taptap-review-section {
+    margin: 0;
+    padding-top: 0!important
+}
+
+section.app-show-main .show-main-body .taptap-review-section .taptap-review-title {
+    padding: 20px 30px 15px;
+    border-bottom: 1px solid #eee
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .taptap-review-section .taptap-review-title {
+        padding: 15px
+    }
+}
+
+section.app-show-main .show-main-body .taptap-review-section .taptap-review-title>ul {
+    display: none
+}
+
+section.app-show-main .show-main-body .taptap-review-section .taptap-review-title .pull-right {
+    display: block
+}
+
+section.app-show-main .show-main-body .taptap-review-section .taptap-button-more,
+section.app-show-main .show-main-body .taptap-review-section>ul>li:nth-child(n+6) {
+    display: none
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-topics .section-title-developer,
+section.app-show-main .show-main-body .main-body-topics .section-title,
+section.app-show-main .show-main-body .main-body-topics div.user-home-side .section-title-developer {
+    padding: 20px 30px 15px;
+    border-top: none;
+    border-bottom: 1px solid #eee
+}
+
+@media only screen and (max-width:767px) {
+    div.user-home-side section.app-show-main .show-main-body .main-body-topics .section-title-developer,
+    section.app-show-main .show-main-body .main-body-topics .section-title,
+    section.app-show-main .show-main-body .main-body-topics div.user-home-side .section-title-developer {
+        margin: 0;
+        padding: 15px
+    }
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-topics .section-title-developer>small,
+section.app-show-main .show-main-body .main-body-topics .section-title>small,
+section.app-show-main .show-main-body .main-body-topics div.user-home-side .section-title-developer>small {
+    display: block!important;
+    float: right
+}
+
+div.user-home-side section.app-show-main .show-main-body .main-body-topics .section-title-developer .entry-to-group,
+section.app-show-main .show-main-body .main-body-topics .section-title .entry-to-group,
+section.app-show-main .show-main-body .main-body-topics div.user-home-side .section-title-developer .entry-to-group {
+    float: right;
+    display: block;
+    font-size: 14px
+}
+
+section.app-show-main .show-main-body .main-body-topics .body-topics-list {
+    margin-bottom: 0
+}
+
+section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item {
+    padding-bottom: 15px
+}
+
+section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item:first-child {
+    margin-top: 20px
+}
+
+section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item:last-of-type {
+    border-bottom: none
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item {
+        padding: 0 15px;
+        border-bottom: 1px solid #eee;
+        margin-top: 20px
+    }
+}
+
+section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item:nth-child(n+6) {
+    display: none
+}
+
+section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item .topic-item-text {
+    padding: 0 30px 15px
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item .topic-item-text {
+        padding: 0 15px 15px;
+        border-bottom: none
+    }
+}
+
+section.app-show-main .show-main-body .main-body-none {
+    margin: 0 0 30px;
+    padding: 30px;
+    text-align: center
+}
+
+section.app-show-main .show-main-body .main-body-none>p {
+    margin: 0
+}
+
+section.app-show-main .show-main-body .main-body-none>p:first-child {
+    margin: 0 0 20px;
+    font-size: 18px
+}
+
+section.app-show-main .show-main-body .main-body-footer.to-review {
+    display: block
+}
+
+@media only screen and (max-width:767px) {
+    section.app-show-main .show-main-body .main-body-none {
+        padding: 15px
+    }
+    section.app-show-main .show-main-body .main-body-footer.to-review {
+        margin: -1px 0 0
+    }
+}
+
+section.app-show-main .show-main-body .main-body-footer .taptap-button-more {
+    border-top: 1px solid #eee;
+    background: #fafafa
+}
+
+section.app-show-main .show-main-body .main-body-footer .taptap-button-more .btn,
+section.app-show-main .show-main-body .main-body-footer .taptap-button-more section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-footer .taptap-button-more .btn-save-verifying {
+    margin: 21px 0;
+    line-height: 20px;
+    font-size: 16px;
+    border: none
+}
+
+section.app-show-main .show-main-body .main-body-footer .taptap-button-more>img {
+    margin: 24px auto
+}
+
+
+/*------------tag-----------------*/
+
+ul.side-body-tag {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    transition: max-height .5s ease 0s
+}
+
+ul.side-body-tag>li {
+    margin: 5px 8px 6px 0;
+    padding: 0;
+    background-color: transparent;
+    vertical-align: middle
+}
+
+ul.side-body-tag>li a,
+ul.side-body-tag>li.tag-add {
+    display: block;
+    padding: 4px 10px;
+    border: 1px solid #14B9C8;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #14B9C8
+}
+
+ul.side-body-tag>li a.active,
+ul.side-body-tag>li a:hover,
+ul.side-body-tag>li.tag-add.active,
+ul.side-body-tag>li.tag-add:hover {
+    background-color: #14B9C8;
+    color: #fff
+}
+
+ul.side-body-tag>li.tag-add {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background: url(http://img.u77.com/game/201705/150927bfhioor65kp9xcr9.png) 0 -608px no-repeat;
+    background-size: 72px;
+    cursor: pointer
+}
+
+ul.side-body-tag>li.tag-add:hover {
+    background: url(http://img.u77.com/game/201705/150927bfhioor65kp9xcr9.png) -31px -608px no-repeat #14B9C8;
+    background-size: 72px
+}
+
+ul.side-body-tag>li.tag-add:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
+
+@media only screen and (max-width:767px) {
+    ul.side-body-tag>li {
+        margin: 5px 8px 8px 0
+    }
+    ul.side-body-tag>li a {
+        padding: 4px 12px;
+        font-size: 14px
+    }
+}
+
+.section-title,
+div.user-home-side .section-title-developer {
+    margin: 0 0 15px;
+    border-bottom: 1px solid #ddd
+}
+
+.section-title::after,
+div.user-home-side .section-title-developer::after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.section-title>h3,
+div.user-home-side .section-title-developer>h3 {
+    float: left;
+    margin: 0 0 10px;
+    padding: 0 0 0 8px;
+    line-height: 20px;
+    font-size: 18px;
+    border-left: 4px solid #14B9C8
+}
+
+.section-title>small,
+div.user-home-side .section-title-developer>small {
+    float: left;
+    display: block;
+    margin: 5px 0 0 10px;
+    font-size: 16px;
+    color: #666
+}
+
+.section-title>a,
+div.user-home-side .section-title-developer>a {
+    line-height: 20px;
+    color: #14B9C8
+}
+
+.section-title>div>span,
+div.user-home-side .section-title-developer>div>span {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    font-weight: 700
+}
+
+.section-title>div>select,
+div.user-home-side .section-title-developer>div>select {
+    display: inline-block;
+    margin: -2px 0 0;
+    padding: 0;
+    width: auto;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle
+}
+
+.section-title>p,
+div.user-home-side .section-title-developer>p {
+    padding: 0 0 0 8px;
+    font-size: 18px;
+    border-left: 4px solid #14B9C8
+}
+
+.section-title>p>span,
+div.user-home-side .section-title-developer>p>span {
+    color: #14B9C8
+}
+
+.main-body-official-topic .section-title,
+.main-body-official-topic div.user-home-side .section-title-developer,
+div.user-home-side .main-body-official-topic .section-title-developer {
+    margin-bottom: 0!important
+}
+
+.main-body-official-topic ul {
+    padding: 10px 30px 5px
+}
+
+@media only screen and (max-width:767px) {
+    .main-body-official-topic ul {
+        padding: 10px 15px 5px
+    }
+}
+
+.main-body-official-topic ul li {
+    padding-bottom: 10px
+}
+
+.main-body-official-topic ul li:nth-child(2) {
+    border-top: 1px solid #eee;
+    padding-top: 10px
+}
+
+.main-body-official-topic ul li:nth-child(2) h3 {
+    padding-top: 0!important
+}
+
+.main-body-official-topic ul li a {
+    position: relative;
+    text-decoration: none
+}
+
+.main-body-official-topic ul li .content-wrapper {
+    display: -webkit-box;
+    display: flex
+}
+
+.main-body-official-topic ul li .image {
+    max-height: 118px;
+    max-width: 208px;
+    font-size: 0;
+    text-align: center
+}
+
+@media only screen and (max-width:767px) {
+    .main-body-official-topic ul li .content-wrapper {
+        display: block
+    }
+    .main-body-official-topic ul li .image {
+        margin-top: 6px
+    }
+}
+
+.main-body-official-topic ul li .image img {
+    border: 1px solid #eee;
+    max-height: 118px
+}
+
+.main-body-official-topic ul li h3 {
+    line-height: 26px;
+    padding-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    color: #333
+}
+
+.main-body-official-topic ul li .text-wrapper {
+    overflow: hidden
+}
+
+.main-body-official-topic ul li .text-wrapper .text {
+    position: relative;
+    max-height: 40px;
+    margin-top: 6px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #999;
+    line-height: 20px
+}
+
+.main-body-official-topic ul li .info {
+    padding-top: 6px;
+    font-size: 12px;
+    color: #999
+}
+
+.main-body-official-topic ul li .info .time {
+    float: left
+}
+
+.main-body-official-topic ul li .info .comments {
+    float: right
+}
+
+.main-body-official-topic ul li .info .comments i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    margin-left: 10px;
+    background: url(https://assets.tapimg.com/img/background/opinion.png?20170508) 0 -116px no-repeat;
+    background-size: 42px
+}
+
+.main-body-official-topic ul li .info .comments span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px
+}
+
+.main-body-official-topic ul li.image h3 {
+    padding-top: 0
+}
+
+.main-body-official-topic ul li.image .text-wrapper {
+    -webkit-box-flex: 1;
+    flex: 1;
+    padding-left: 15px
+}
+
+.main-body-official-topic ul li.image .text-wrapper .text {
+    max-height: 60px;
+    overflow: hidden
+}
+
+.video-js.vjs-playing .vjs-big-play-button {
+    display: none!important
+}
+
+.video-js .vjs-big-play-button {
+    display: none
+}
+
+@media only screen and (max-width:767px) {
+    .main-body-official-topic ul li.image .text-wrapper {
+        padding-left: 0
+    }
+    .video-js .vjs-big-play-button {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -30px 0 0 -30px;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background: #000;
+        background: rgba(0, 0, 0, .6);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"
+    }
+    .video-js .vjs-big-play-button:active,
+    .video-js .vjs-big-play-button:focus,
+    .video-js .vjs-big-play-button:hover {
+        color: #fff;
+        background: #14B9C8!important
+    }
+    .video-js .vjs-big-play-button>span {
+        font-size: 30px
+    }
+    .video-js .vjs-big-play-button:before {
+        line-height: 60px
+    }
+}
+
+
+/*----------------new--------------------*/
