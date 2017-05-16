@@ -37,5 +37,8 @@
     "scripts": [
         "client.js"
     ],
+    "css": [
+        "templates/u77-connect/css/widget.css"
+    ],
     "language": ""
 }
