@@ -82,7 +82,6 @@
 
     // define widgets
     U77Connect.getWidgets = function (widgets, next) {
-
         async
             .map([
                 {
@@ -147,7 +146,7 @@
                 }
             ]);
         } catch (e) {
-            console.error(e);
+            console.log('category render err');
         }
 
     }
