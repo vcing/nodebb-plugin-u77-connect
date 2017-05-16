@@ -127,8 +127,7 @@
             params.res.render = function (template, data) {
                 _render
                     .call(params.res, 'u77-connect/category', data, function (err, html) {
-                        params.html = html;
-                        callback(err, params);
+                        callback(err, html);
                     });
             }
 
