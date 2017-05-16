@@ -127,14 +127,14 @@ section.app-show-main .show-main-header .main-header-text .taptap-app-area {
 
 @media only screen and (max-width:991px) {
     section.app-show-main .show-main-header .main-header-text .taptap-app-area {
-        display: none
+        display: none;
     }
 }
 
 section.app-show-main .show-main-header .main-header-text>h2 {
     margin: 0;
     font-size: 12px;
-    color: #999
+    color: #999;
 }
 
 section.app-show-main .show-main-header .main-header-text .header-text-author {
