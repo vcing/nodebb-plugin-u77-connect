@@ -13,21 +13,6 @@ $(document)
  * https://github.com/lokesh/lightbox2/blob/master/LICENSE
  */
 
-// Uses Node, AMD or browser globals to create a module.
-(function (root, factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define(['jquery'], factory);
-    } else if (typeof exports === 'object') {
-        // Node. Does not work with strict CommonJS, but only CommonJS-like environments
-        // that support module.exports, like Node.
-        module.exports = factory(require('jquery'));
-    } else {
-        // Browser globals (root is window)
-        root.lightbox = factory(root.jQuery);
-    }
-}(this, function ($) {
-
     function Lightbox(options) {
         this.album = [];
         this.currentImageIndex = void 0;
@@ -631,5 +616,4 @@ $(document)
         }
     };
 
-    return new Lightbox();
-}));
+    window.lightbox = new Lightbox();
