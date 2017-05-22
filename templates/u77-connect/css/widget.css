@@ -2101,7 +2101,7 @@ div.user-home-side .main-body-official-topic .section-title-developer {
 }
 
 body:after {
-    content: url(http://file.u77.com/header/static/images/close.png) url(http://file.u77.com/header/static/images/loading.gif) url(http://file.u77.com/header/static/images/prev.png) url(../images/next.png);
+    content: url(http://file.u77.com/header/static/images/close.png) url(http://file.u77.com/header/static/images/loading.gif) url(http://file.u77.com/header/static/images/prev.png) url(http://file.u77.com/header/static/images/next.png);
     display: none
 }
 
@@ -2225,7 +2225,7 @@ body.lb-disable-scrolling {
     width: 64%;
     right: 0;
     float: right;
-    background: url(../images/next.png) right 48% no-repeat;
+    background: url(http://file.u77.com/header/static/images/next.png) right 48% no-repeat;
     filter: alpha(Opacity=0);
     opacity: 0;
     -webkit-transition: opacity .6s;
