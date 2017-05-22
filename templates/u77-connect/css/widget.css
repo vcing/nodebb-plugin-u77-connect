@@ -629,6 +629,14 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
     background-size: 100px
 }
 
+.taptap-button-download .btn-primary.laptop>i,
+.taptap-button-download .btn-primary.web>i {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 .taptap-button-download .btn-primary.laptop:hover>i::before {
     color: #ccc;
 }
