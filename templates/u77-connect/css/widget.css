@@ -513,7 +513,12 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
     min-width: 130px;
     line-height: 24px;
     font-size: 14px;
-    margin-right: 10px;
+}
+
+@media only screen and (min-width:767px) {
+    .taptap-button-download .btn {
+        margin-right: 10px;
+    }
 }
 
 .taptap-button-download .btn::after,
