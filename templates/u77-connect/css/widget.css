@@ -2209,7 +2209,7 @@ body.lb-disable-scrolling {
     float: left;
     background: url(http://file.u77.com/header/static/images/prev.png) left 48% no-repeat;
     filter: alpha(Opacity=0);
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: opacity .6s;
     -moz-transition: opacity .6s;
     -o-transition: opacity .6s;
@@ -2227,7 +2227,7 @@ body.lb-disable-scrolling {
     float: right;
     background: url(http://file.u77.com/header/static/images/next.png) right 48% no-repeat;
     filter: alpha(Opacity=0);
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: opacity .6s;
     -moz-transition: opacity .6s;
     -o-transition: opacity .6s;
