@@ -2306,3 +2306,9 @@ body.lb-disable-scrolling {
     filter: alpha(Opacity=100);
     opacity: 1
 }
+
+.fa.fa-u77 {
+    background: url(http://file.u77.com/header/static/images/Uicon.png) no-repeat 1px 1px;
+    width: 42px;
+    height: 42px;
+}
