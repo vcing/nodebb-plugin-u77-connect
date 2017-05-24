@@ -630,7 +630,7 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
 }
 
 .taptap-button-download .btn-primary.laptop>i,
-.taptap-button-download .btn-primary.web>i {
+.taptap-button-download .btn-primary.chrome>i {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
@@ -647,11 +647,11 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
     line-height: 24px;
 }
 
-.taptap-button-download .btn-primary.web:hover>i::before {
+.taptap-button-download .btn-primary.chrome:hover>i::before {
     color: #ccc;
 }
 
-.taptap-button-download .btn-primary.web>i::before {
+.taptap-button-download .btn-primary.chrome>i::before {
     content: "\f268";
     font-size: 20px;
     line-height: 24px;
