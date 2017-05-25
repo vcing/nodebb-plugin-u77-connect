@@ -121,12 +121,12 @@ section.app-show-main .show-main-header .main-header-text>h1 {
     }
 }
 
-section.app-show-main .show-main-header .main-header-text .taptap-app-area {
+section.app-show-main .show-main-header .main-header-text .u77game-app-area {
     line-height: 16px
 }
 
 @media only screen and (max-width:991px) {
-    section.app-show-main .show-main-header .main-header-text .taptap-app-area {
+    section.app-show-main .show-main-header .main-header-text .u77game-app-area {
         display: none;
     }
 }
@@ -218,7 +218,7 @@ section.app-show-main .show-main-header .main-header-text .header-text-download 
         position: static;
         width: auto
     }
-    section.app-show-main .show-main-header .main-header-text .header-text-download .taptap-button-download button:first-child {
+    section.app-show-main .show-main-header .main-header-text .header-text-download .u77game-button-download button:first-child {
         margin-left: 0
     }
 }
@@ -436,7 +436,7 @@ section.app-show-main .show-main-header .main-header-tab .nav>li>a {
 }
 
 section.app-show-main .show-main-header .main-header-tab .nav>li>a:hover,
-section.app-show-main .show-main-header .taptap-button-collect>span:hover {
+section.app-show-main .show-main-header .u77game-button-collect>span:hover {
     color: #14B9C8
 }
 
@@ -453,7 +453,7 @@ section.app-show-main .show-main-header .main-header-tab .nav>li>a>small {
     font-size: 12px
 }
 
-section.app-show-main .show-main-header .taptap-button-collect {
+section.app-show-main .show-main-header .u77game-button-collect {
     background: 0 0;
     border-color: transparent;
     float: left;
@@ -462,7 +462,7 @@ section.app-show-main .show-main-header .taptap-button-collect {
 }
 
 @media only screen and (max-width:767px) {
-    section.app-show-main .show-main-header .taptap-button-collect {
+    section.app-show-main .show-main-header .u77game-button-collect {
         float: none;
         position: absolute;
         top: 27px;
@@ -470,45 +470,45 @@ section.app-show-main .show-main-header .taptap-button-collect {
     }
 }
 
-section.app-show-main .show-main-header .taptap-button-collect:hover {
+section.app-show-main .show-main-header .u77game-button-collect:hover {
     background-color: transparent;
     border-color: transparent
 }
 
-section.app-show-main .show-main-header .taptap-button-collect+.tooltip {
+section.app-show-main .show-main-header .u77game-button-collect+.tooltip {
     top: 0!important
 }
 
-section.app-show-main .show-main-header .taptap-button-collect>i {
+section.app-show-main .show-main-header .u77game-button-collect>i {
     float: left;
     margin-right: 5px
 }
 
-section.app-show-main .show-main-header .taptap-button-collect>span {
+section.app-show-main .show-main-header .u77game-button-collect>span {
     float: right;
     padding-top: 1px;
     color: #14B9C8
 }
 
-.taptap-button-download {
+.u77game-button-download {
     float: left;
     position: relative
 }
 
 @media only screen and (max-width:767px) {
-    .taptap-button-download {
+    .u77game-button-download {
         float: none;
         padding: 0 5px;
         text-align: center
     }
-    .taptap-button-download+.taptap-download-btn {
+    .u77game-button-download+.u77game-download-btn {
         margin: 10px 0 0
     }
 }
 
-.taptap-button-download .btn,
-.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
-section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying {
+.u77game-button-download .btn,
+.u77game-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
+section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-button-download .btn-save-verifying {
     padding: 7px 15px;
     min-width: 130px;
     line-height: 24px;
@@ -516,74 +516,74 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
 }
 
 @media only screen and (min-width:767px) {
-    .taptap-button-download .btn {
+    .u77game-button-download .btn {
         margin-right: 10px;
     }
 }
 
-.taptap-button-download .btn::after,
-.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying::after,
-section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying::after {
+.u77game-button-download .btn::after,
+.u77game-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying::after,
+section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-button-download .btn-save-verifying::after {
     content: "";
     display: table;
     clear: both
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
-    .taptap-button-download .btn,
-    .taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
-    section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying {
+    .u77game-button-download .btn,
+    .u77game-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
+    section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-button-download .btn-save-verifying {
         padding: 8px 10px
     }
 }
 
-.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .ios.btn-save-verifying,
-section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .ios.btn-save-verifying {
+.u77game-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .ios.btn-save-verifying,
+section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-button-download .ios.btn-save-verifying {
     margin-left: 10px
 }
 
 @media only screen and (max-width:767px) {
-    .taptap-button-download .btn,
-    .taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
-    section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying {
+    .u77game-button-download .btn,
+    .u77game-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
+    section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-button-download .btn-save-verifying {
         padding: 8px
     }
-    .taptap-button-download .btn.ios,
-    .taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .ios.btn-save-verifying,
-    section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .ios.btn-save-verifying {
+    .u77game-button-download .btn.ios,
+    .u77game-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .ios.btn-save-verifying,
+    section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-button-download .ios.btn-save-verifying {
         margin: 10px 0
     }
 }
 
-.taptap-button-download .btn.disabled,
-.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .disabled.btn-save-verifying,
-section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .disabled.btn-save-verifying {
+.u77game-button-download .btn.disabled,
+.u77game-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .disabled.btn-save-verifying,
+section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-button-download .disabled.btn-save-verifying {
     pointer-events: none;
     cursor: default
 }
 
-.taptap-button-download .btn>span,
-.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying>span,
-section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying>span {
+.u77game-button-download .btn>span,
+.u77game-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying>span,
+section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-button-download .btn-save-verifying>span {
     display: inline-block;
     line-height: 24px;
     vertical-align: middle
 }
 
-.taptap-button-download .btn>i,
-.taptap-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying>i,
-section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-button-download .btn-save-verifying>i {
+.u77game-button-download .btn>i,
+.u77game-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying>i,
+section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-button-download .btn-save-verifying>i {
     display: inline-block;
     width: 24px;
     height: 24px;
     vertical-align: middle
 }
 
-.taptap-button-download .btn-primary.android {
+.u77game-button-download .btn-primary.android {
     position: relative
 }
 
-.taptap-button-download .btn-primary.android .button-tip {
+.u77game-button-download .btn-primary.android .button-tip {
     display: block;
     position: absolute;
     top: -1px;
@@ -600,7 +600,7 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
     box-shadow: -1px 1px 2px 0 rgba(0, 0, 0, .1)
 }
 
-.taptap-button-download .btn-primary.android .button-tip.chrome {
+.u77game-button-download .btn-primary.android .button-tip.chrome {
     -webkit-transform: scale(.7);
     line-height: 17px;
     height: 18px;
@@ -609,63 +609,63 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
     width: 34px
 }
 
-.taptap-button-download .btn-primary.android:hover .button-tip {
+.u77game-button-download .btn-primary.android:hover .button-tip {
     color: #E39412;
     background: #FFEBC9
 }
 
-.taptap-button-download .btn-primary.android:hover>i {
+.u77game-button-download .btn-primary.android:hover>i {
     background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px 0 no-repeat;
     background-size: 100px
 }
 
-.taptap-button-download .btn-primary.android>i {
+.u77game-button-download .btn-primary.android>i {
     background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) no-repeat;
     background-size: 100px
 }
 
-.taptap-button-download .btn-primary.ios:hover>i {
+.u77game-button-download .btn-primary.ios:hover>i {
     background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px -90px no-repeat;
     background-size: 100px
 }
 
-.taptap-button-download .btn-primary.ios>i {
+.u77game-button-download .btn-primary.ios>i {
     background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) 0 -90px no-repeat;
     background-size: 100px
 }
 
-.taptap-button-download .btn-primary.laptop>i,
-.taptap-button-download .btn-primary.chrome>i {
+.u77game-button-download .btn-primary.laptop>i,
+.u77game-button-download .btn-primary.chrome>i {
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
 }
 
-.taptap-button-download .btn-primary.laptop:hover>i::before {
+.u77game-button-download .btn-primary.laptop:hover>i::before {
     color: #ccc;
 }
 
-.taptap-button-download .btn-primary.laptop>i::before {
+.u77game-button-download .btn-primary.laptop>i::before {
     content: "\f109";
     font-size: 20px;
     line-height: 24px;
 }
 
-.taptap-button-download .btn-primary.chrome:hover>i::before {
+.u77game-button-download .btn-primary.chrome:hover>i::before {
     color: #ccc;
 }
 
-.taptap-button-download .btn-primary.chrome>i::before {
+.u77game-button-download .btn-primary.chrome>i::before {
     content: "\f268";
     font-size: 20px;
     line-height: 24px;
 }
 
-.taptap-button-download .btn-default,
-.taptap-button-download .btn-default:active,
-.taptap-button-download .btn-default:focus,
-.taptap-button-download .btn-default:hover {
+.u77game-button-download .btn-default,
+.u77game-button-download .btn-default:active,
+.u77game-button-download .btn-default:focus,
+.u77game-button-download .btn-default:hover {
     color: #fff;
     background: #BFBFBF;
     border-color: #BFBFBF;
@@ -673,41 +673,41 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
-    .taptap-button-download .btn-primary {
+    .u77game-button-download .btn-primary {
         padding: 8px 20px
     }
-    .taptap-button-download .btn-default {
+    .u77game-button-download .btn-default {
         padding: 8px 9px;
         min-width: 0
     }
 }
 
-.taptap-button-download .btn-default.android>i {
+.u77game-button-download .btn-default.android>i {
     background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -52px 0 no-repeat;
     background-size: 100px
 }
 
-.taptap-button-download .btn-default.ios>i {
+.u77game-button-download .btn-default.ios>i {
     background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) 0 -90px no-repeat;
     background-size: 100px
 }
 
-.taptap-button-download .btn-hollow {
+.u77game-button-download .btn-hollow {
     color: #14B9C8;
     border-color: #14B9C8
 }
 
-.taptap-button-download .btn-hollow.android>i {
+.u77game-button-download .btn-hollow.android>i {
     background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px 0 no-repeat;
     background-size: 100px
 }
 
-.taptap-button-download .btn-hollow.ios>i {
+.u77game-button-download .btn-hollow.ios>i {
     background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px -90px no-repeat;
     background-size: 100px
 }
 
-.taptap-button-download .btn-link {
+.u77game-button-download .btn-link {
     margin-top: 5px;
     min-width: 0;
     line-height: 14px;
@@ -717,13 +717,13 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
     border: none
 }
 
-.taptap-button-download .btn-link:active,
-.taptap-button-download .btn-link:focus,
-.taptap-button-download .btn-link:hover {
+.u77game-button-download .btn-link:active,
+.u77game-button-download .btn-link:focus,
+.u77game-button-download .btn-link:hover {
     text-decoration: none
 }
 
-.taptap-button-download .btn-link.ios {
+.u77game-button-download .btn-link.ios {
     margin-left: 20px;
     padding: 16px 0 0 27px;
     width: 86px;
@@ -732,12 +732,12 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
 }
 
 @media only screen and (max-width:767px) {
-    .taptap-button-download .btn-link.ios {
+    .u77game-button-download .btn-link.ios {
         margin-left: 0
     }
 }
 
-.taptap-button-download .btn-link.android {
+.u77game-button-download .btn-link.android {
     margin-left: 10px;
     padding: 16px 0 0 31px;
     width: 100px;
@@ -746,7 +746,7 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
     background-size: 100px
 }
 
-.taptap-button-download .sell_price {
+.u77game-button-download .sell_price {
     position: absolute;
     width: 100%;
     font-size: 12px;
@@ -757,10 +757,10 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .taptap-but
 }
 
 @media only screen and (max-width:767px) {
-    .taptap-button-download .btn-link.android {
+    .u77game-button-download .btn-link.android {
         margin-left: 0
     }
-    .taptap-button-download .sell_price {
+    .u77game-button-download .sell_price {
         position: static;
         width: auto
     }
@@ -796,27 +796,27 @@ section.app-show-main .show-main-body.first div.user-home-side .section-title-de
 }
 
 section.app-show-main .show-main-body.first .main-body-topics>ul>li:nth-child(n+6),
-section.app-show-main .show-main-body.first .taptap-review-section>ul>li:nth-child(n+6) {
+section.app-show-main .show-main-body.first .u77game-review-section>ul>li:nth-child(n+6) {
     display: block!important
 }
 
 section.app-show-main .show-main-body.first .main-body-topics>ul>li:nth-child(n+6).collapse:not(.in),
-section.app-show-main .show-main-body.first .taptap-review-section>ul>li:nth-child(n+6).collapse:not(.in) {
+section.app-show-main .show-main-body.first .u77game-review-section>ul>li:nth-child(n+6).collapse:not(.in) {
     display: none!important
 }
 
-section.app-show-main .show-main-body.first .main-body-topics .taptap-button-more,
-section.app-show-main .show-main-body.first .taptap-review-section .taptap-button-more,
-section.app-show-main .show-main-body.first .taptap-review-section .taptap-review-title>ul {
+section.app-show-main .show-main-body.first .main-body-topics .u77game-button-more,
+section.app-show-main .show-main-body.first .u77game-review-section .u77game-button-more,
+section.app-show-main .show-main-body.first .u77game-review-section .u77game-review-title>ul {
     display: block
 }
 
-section.app-show-main .show-main-body.first .taptap-review-section .taptap-review-title .pull-right {
+section.app-show-main .show-main-body.first .u77game-review-section .u77game-review-title .pull-right {
     display: none
 }
 
 section.app-show-main .show-main-body.first .main-body-footer,
-section.app-show-main .show-main-body.first .taptap-review-section .taptap-review-title .filter-review {
+section.app-show-main .show-main-body.first .u77game-review-section .u77game-review-title .filter-review {
     display: block
 }
 
@@ -825,7 +825,7 @@ section.app-show-main .show-main-body.first .main-body-topics {
     margin-bottom: 0
 }
 
-section.app-show-main .show-main-body.first .main-body-footer .taptap-button-more {
+section.app-show-main .show-main-body.first .main-body-footer .u77game-button-more {
     padding: 24px 0
 }
 
@@ -927,9 +927,9 @@ section.app-show-main .show-main-body div.user-home-side .section-title-develope
     margin-top: 0
 }
 
-div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .taptap-button-opinion .glyphicon,
-section.app-show-main .show-main-body .section-title .filter-review .taptap-button-opinion .glyphicon,
-section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review .taptap-button-opinion .glyphicon {
+div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .u77game-button-opinion .glyphicon,
+section.app-show-main .show-main-body .section-title .filter-review .u77game-button-opinion .glyphicon,
+section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review .u77game-button-opinion .glyphicon {
     float: right;
     margin-left: 4px;
     margin-top: 6px
@@ -1405,16 +1405,16 @@ section.app-show-main .show-main-body .main-body-description {
     margin-bottom: 20px
 }
 
-div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .taptap-button-share,
-section.app-show-main .show-main-body .main-body-description .section-title .taptap-button-share,
-section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .taptap-button-share {
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .u77game-button-share,
+section.app-show-main .show-main-body .main-body-description .section-title .u77game-button-share,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .u77game-button-share {
     float: left;
     margin-left: 20px
 }
 
-div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .taptap-button-share>span,
-section.app-show-main .show-main-body .main-body-description .section-title .taptap-button-share>span,
-section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .taptap-button-share>span {
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .u77game-button-share>span,
+section.app-show-main .show-main-body .main-body-description .section-title .u77game-button-share>span,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .u77game-button-share>span {
     display: none
 }
 
@@ -1433,36 +1433,36 @@ section.app-show-main .show-main-body .main-body-description div.user-home-side 
     font-size: 14px
 }
 
-div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion,
-section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion,
-section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion {
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .u77game-button-opinion,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .u77game-button-opinion,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .u77game-button-opinion {
     padding: 0;
     line-height: 20px;
     font-size: 14px;
     color: #333
 }
 
-div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:active,
-div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:focus,
-div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:hover,
-section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:active,
-section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:focus,
-section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:hover,
-section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:active,
-section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:focus,
-section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:hover {
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .u77game-button-opinion:active,
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .u77game-button-opinion:focus,
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .u77game-button-opinion:hover,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .u77game-button-opinion:active,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .u77game-button-opinion:focus,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .u77game-button-opinion:hover,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .u77game-button-opinion:active,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .u77game-button-opinion:focus,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .u77game-button-opinion:hover {
     background: 0 0
 }
 
-div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:active>span,
-div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:focus>span,
-div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .taptap-button-opinion:hover>span,
-section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:active>span,
-section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:focus>span,
-section.app-show-main .show-main-body .main-body-description .section-title .pull-right .taptap-button-opinion:hover>span,
-section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:active>span,
-section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:focus>span,
-section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .taptap-button-opinion:hover>span {
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .u77game-button-opinion:active>span,
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .u77game-button-opinion:focus>span,
+div.user-home-side section.app-show-main .show-main-body .main-body-description .section-title-developer .pull-right .u77game-button-opinion:hover>span,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .u77game-button-opinion:active>span,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .u77game-button-opinion:focus>span,
+section.app-show-main .show-main-body .main-body-description .section-title .pull-right .u77game-button-opinion:hover>span,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .u77game-button-opinion:active>span,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .u77game-button-opinion:focus>span,
+section.app-show-main .show-main-body .main-body-description div.user-home-side .section-title-developer .pull-right .u77game-button-opinion:hover>span {
     text-decoration: underline
 }
 
@@ -1641,32 +1641,32 @@ section.app-show-main .show-main-body .main-body-info .body-info-list>li>a {
     text-decoration: underline
 }
 
-section.app-show-main .show-main-body .taptap-review-section {
+section.app-show-main .show-main-body .u77game-review-section {
     margin: 0;
     padding-top: 0!important
 }
 
-section.app-show-main .show-main-body .taptap-review-section .taptap-review-title {
+section.app-show-main .show-main-body .u77game-review-section .u77game-review-title {
     padding: 20px 30px 15px;
     border-bottom: 1px solid #eee
 }
 
 @media only screen and (max-width:767px) {
-    section.app-show-main .show-main-body .taptap-review-section .taptap-review-title {
+    section.app-show-main .show-main-body .u77game-review-section .u77game-review-title {
         padding: 15px
     }
 }
 
-section.app-show-main .show-main-body .taptap-review-section .taptap-review-title>ul {
+section.app-show-main .show-main-body .u77game-review-section .u77game-review-title>ul {
     display: none
 }
 
-section.app-show-main .show-main-body .taptap-review-section .taptap-review-title .pull-right {
+section.app-show-main .show-main-body .u77game-review-section .u77game-review-title .pull-right {
     display: block
 }
 
-section.app-show-main .show-main-body .taptap-review-section .taptap-button-more,
-section.app-show-main .show-main-body .taptap-review-section>ul>li:nth-child(n+6) {
+section.app-show-main .show-main-body .u77game-review-section .u77game-button-more,
+section.app-show-main .show-main-body .u77game-review-section>ul>li:nth-child(n+6) {
     display: none
 }
 
@@ -1706,36 +1706,36 @@ section.app-show-main .show-main-body .main-body-topics .body-topics-list {
     margin-bottom: 0
 }
 
-section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item {
+section.app-show-main .show-main-body .main-body-topics .body-topics-list .u77game-topic-item {
     padding-bottom: 15px
 }
 
-section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item:first-child {
+section.app-show-main .show-main-body .main-body-topics .body-topics-list .u77game-topic-item:first-child {
     margin-top: 20px
 }
 
-section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item:last-of-type {
+section.app-show-main .show-main-body .main-body-topics .body-topics-list .u77game-topic-item:last-of-type {
     border-bottom: none
 }
 
 @media only screen and (max-width:767px) {
-    section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item {
+    section.app-show-main .show-main-body .main-body-topics .body-topics-list .u77game-topic-item {
         padding: 0 15px;
         border-bottom: 1px solid #eee;
         margin-top: 20px
     }
 }
 
-section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item:nth-child(n+6) {
+section.app-show-main .show-main-body .main-body-topics .body-topics-list .u77game-topic-item:nth-child(n+6) {
     display: none
 }
 
-section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item .topic-item-text {
+section.app-show-main .show-main-body .main-body-topics .body-topics-list .u77game-topic-item .topic-item-text {
     padding: 0 30px 15px
 }
 
 @media only screen and (max-width:767px) {
-    section.app-show-main .show-main-body .main-body-topics .body-topics-list .taptap-topic-item .topic-item-text {
+    section.app-show-main .show-main-body .main-body-topics .body-topics-list .u77game-topic-item .topic-item-text {
         padding: 0 15px 15px;
         border-bottom: none
     }
@@ -1769,21 +1769,21 @@ section.app-show-main .show-main-body .main-body-footer.to-review {
     }
 }
 
-section.app-show-main .show-main-body .main-body-footer .taptap-button-more {
+section.app-show-main .show-main-body .main-body-footer .u77game-button-more {
     border-top: 1px solid #eee;
     background: #fafafa
 }
 
-section.app-show-main .show-main-body .main-body-footer .taptap-button-more .btn,
-section.app-show-main .show-main-body .main-body-footer .taptap-button-more section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
-section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-footer .taptap-button-more .btn-save-verifying {
+section.app-show-main .show-main-body .main-body-footer .u77game-button-more .btn,
+section.app-show-main .show-main-body .main-body-footer .u77game-button-more section.developer-app-submit .app-submit-main.form>form .form-footer .btn-save-verifying,
+section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-footer .u77game-button-more .btn-save-verifying {
     margin: 21px 0;
     line-height: 20px;
     font-size: 16px;
     border: none
 }
 
-section.app-show-main .show-main-body .main-body-footer .taptap-button-more>img {
+section.app-show-main .show-main-body .main-body-footer .u77game-button-more>img {
     margin: 24px auto
 }
 
