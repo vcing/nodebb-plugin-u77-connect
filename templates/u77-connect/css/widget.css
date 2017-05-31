@@ -580,7 +580,49 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-bu
 }
 
 .u77game-button-download .btn-primary.android {
-    position: relative
+    position: relative;
+    border-color: #fff;
+    background-color: #86ba4b;
+}
+
+.u77game-button-download .btn-primary.android:hover {
+    position: relative;
+    border-color: #fff;
+    background-color: #6ea232;
+}
+
+.u77game-button-download .btn-primary.ios {
+    position: relative;
+    border-color: #fff;
+    background-color: #29adef;
+}
+
+.u77game-button-download .btn-primary.ios:hover {
+    position: relative;
+    border-color: #fff;
+    background-color: #1d91cb;
+}
+
+.u77game-button-download .btn-primary.android>i {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 22px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.u77game-button-download .btn-primary.android>i:before {
+    content: "\f17b";
+}
+
+.u77game-button-download .btn-primary.ios>i {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 22px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.u77game-button-download .btn-primary.ios>i:before {
+    content: "\f179";
 }
 
 .u77game-button-download .btn-primary.android .button-tip {
@@ -616,11 +658,6 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-bu
 
 .u77game-button-download .btn-primary.android:hover>i {
     background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px 0 no-repeat;
-    background-size: 100px
-}
-
-.u77game-button-download .btn-primary.android>i {
-    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) no-repeat;
     background-size: 100px
 }
 
