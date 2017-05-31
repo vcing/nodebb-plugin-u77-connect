@@ -73,10 +73,10 @@ section.app-show-main .show-main-header .main-header-icon .main-header-rec {
 
 section.app-show-main .show-main-header .main-header-icon .main-header-rec>span {
     padding: 3px 14px;
-    background-color: #b4ebfa;
+    background-color: #b5e6ff;
     border-radius: 15px;
     font-size: 12px;
-    color: #14B9C8
+    color: #1d91cb
 }
 
 section.app-show-main .show-main-header .main-header-text {
@@ -152,7 +152,7 @@ section.app-show-main .show-main-header .main-header-text .header-text-author a 
 section.app-show-main .show-main-header .main-header-text .header-text-author>a,
 section.app-show-main .show-main-header .main-header-text .header-text-author>span {
     font-size: 12px;
-    color: #14B9C8
+    color: #1d91cb
 }
 
 section.app-show-main .show-main-header .main-header-text .header-text-children-tips {
@@ -318,7 +318,7 @@ section.app-show-main .show-main-header .main-header-text .header-text-download 
     line-height: 30px;
     font-size: 12px;
     height: 31px;
-    color: #14B9C8
+    color: #1d91cb
 }
 
 @media only screen and (max-width:767px) {
@@ -420,8 +420,8 @@ section.app-show-main .show-main-header .main-header-tab .nav>li:nth-child(2)>a 
 }
 
 section.app-show-main .show-main-header .main-header-tab .nav>li.active>a {
-    color: #14B9C8;
-    border-bottom-color: #14B9C8
+    color: #1d91cb;
+    border-bottom-color: #1d91cb
 }
 
 section.app-show-main .show-main-header .main-header-tab .nav>li>a {
@@ -437,7 +437,7 @@ section.app-show-main .show-main-header .main-header-tab .nav>li>a {
 
 section.app-show-main .show-main-header .main-header-tab .nav>li>a:hover,
 section.app-show-main .show-main-header .u77game-button-collect>span:hover {
-    color: #14B9C8
+    color: #1d91cb
 }
 
 @media only screen and (max-width:767px) {
@@ -487,7 +487,7 @@ section.app-show-main .show-main-header .u77game-button-collect>i {
 section.app-show-main .show-main-header .u77game-button-collect>span {
     float: right;
     padding-top: 1px;
-    color: #14B9C8
+    color: #1d91cb
 }
 
 .u77game-button-download {
@@ -657,17 +657,17 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-bu
 }
 
 .u77game-button-download .btn-primary.android:hover>i {
-    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px 0 no-repeat;
+    /*background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px 0 no-repeat;*/
     background-size: 100px
 }
 
 .u77game-button-download .btn-primary.ios:hover>i {
-    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px -90px no-repeat;
+    /*background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) -26px -90px no-repeat;*/
     background-size: 100px
 }
 
 .u77game-button-download .btn-primary.ios>i {
-    background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) 0 -90px no-repeat;
+    /*background: url(http://img.u77.com/game/201705/15065403iucxpl30dvt5hw.png) 0 -90px no-repeat;*/
     background-size: 100px
 }
 
@@ -730,8 +730,8 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-bu
 }
 
 .u77game-button-download .btn-hollow {
-    color: #14B9C8;
-    border-color: #14B9C8
+    color: #1d91cb;
+    border-color: #1d91cb
 }
 
 .u77game-button-download .btn-hollow.android>i {
@@ -908,7 +908,7 @@ section.app-show-main .show-main-body div.user-home-side .section-title-develope
     display: block;
     margin-top: -4px;
     font-size: 14px;
-    color: #14B9C8
+    color: #1d91cb
 }
 
 div.user-home-side section.app-show-main .show-main-body .section-title-developer>small>a:active,
@@ -953,7 +953,7 @@ div.user-home-side section.app-show-main .show-main-body .section-title-develope
 section.app-show-main .show-main-body .section-title .pull-right>small,
 section.app-show-main .show-main-body div.user-home-side .section-title-developer .pull-right>small {
     font-size: 100%;
-    color: #14B9C8
+    color: #1d91cb
 }
 
 div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review,
@@ -993,7 +993,7 @@ section.app-show-main .show-main-body div.user-home-side .section-title-develope
 div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .dropdown-menu li:hover,
 section.app-show-main .show-main-body .section-title .filter-review .dropdown-menu li:hover,
 section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review .dropdown-menu li:hover {
-    color: #14B9C8
+    color: #1d91cb
 }
 
 div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .dropdown-menu li.divider,
@@ -1007,7 +1007,7 @@ section.app-show-main .show-main-body div.user-home-side .section-title-develope
 div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .dropdown-menu li.current a,
 section.app-show-main .show-main-body .section-title .filter-review .dropdown-menu li.current a,
 section.app-show-main .show-main-body div.user-home-side .section-title-developer .filter-review .dropdown-menu li.current a {
-    color: #14B9C8
+    color: #1d91cb
 }
 
 div.user-home-side section.app-show-main .show-main-body .section-title-developer .filter-review .dropdown-menu li a,
@@ -1019,7 +1019,7 @@ section.app-show-main .show-main-body div.user-home-side .section-title-develope
 section.app-show-main .show-main-body .main-body-demo {
     padding: 20px 30px;
     color: #fff;
-    background: #14B9C8
+    background: #1d91cb
 }
 
 @media only screen and (max-width:767px) {
@@ -1255,7 +1255,7 @@ section.developer-app-submit .app-submit-main.form>form .form-footer section.app
 section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn-save-verifying:focus,
 section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn-save-verifying:hover {
     color: #fff;
-    background: #14B9C8!important
+    background: #1d91cb!important
 }
 
 section.app-show-main .show-main-body .main-body-images .body-images-normal .list-unstyled>li .btn>span,
@@ -1379,7 +1379,7 @@ section.app-show-main .show-main-body .main-body-additional>li>i {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: url(http://img.u77.com/game/201705/15092710rbkaymnukklkvk.png) no-repeat #14B9C8;
+    background: url(http://img.u77.com/game/201705/15092710rbkaymnukklkvk.png) no-repeat #1d91cb;
     background-size: 28px
 }
 
@@ -1580,7 +1580,7 @@ section.developer-app-submit .app-submit-main.form>form .form-footer section.app
 section.developer-app-submit .app-submit-main.form>form .form-footer section.app-show-main .show-main-body .main-body-description .body-description-more .btn-save-verifying:hover {
     text-decoration: none;
     color: #fff;
-    background: #14B9C8
+    background: #1d91cb
 }
 
 section.app-show-main .show-main-body .main-body-info .body-info-list>li>span.info-item-content,
@@ -1845,18 +1845,18 @@ ul.side-body-tag>li a,
 ul.side-body-tag>li.tag-add {
     display: block;
     padding: 4px 10px;
-    border: 1px solid #14B9C8;
+    border: 1px solid #1d91cb;
     border-radius: 4px;
     text-decoration: none;
     font-size: 14px;
-    color: #14B9C8
+    color: #1d91cb
 }
 
 ul.side-body-tag>li a.active,
 ul.side-body-tag>li a:hover,
 ul.side-body-tag>li.tag-add.active,
 ul.side-body-tag>li.tag-add:hover {
-    background-color: #14B9C8;
+    background-color: #1d91cb;
     color: #fff
 }
 
@@ -1872,7 +1872,7 @@ ul.side-body-tag>li.tag-add {
 }
 
 ul.side-body-tag>li.tag-add:hover {
-    background: url(http://img.u77.com/game/201705/150927bfhioor65kp9xcr9.png) -31px -608px no-repeat #14B9C8;
+    background: url(http://img.u77.com/game/201705/150927bfhioor65kp9xcr9.png) -31px -608px no-repeat #1d91cb;
     background-size: 72px
 }
 
@@ -1910,7 +1910,7 @@ div.user-home-side .section-title-developer>h3 {
     padding: 0 0 0 8px;
     line-height: 20px;
     font-size: 18px;
-    border-left: 4px solid #14B9C8
+    border-left: 4px solid #1d91cb
 }
 
 .section-title>small,
@@ -1925,7 +1925,7 @@ div.user-home-side .section-title-developer>small {
 .section-title>a,
 div.user-home-side .section-title-developer>a {
     line-height: 20px;
-    color: #14B9C8
+    color: #1d91cb
 }
 
 .section-title>div>span,
@@ -1951,12 +1951,12 @@ div.user-home-side .section-title-developer>div>select {
 div.user-home-side .section-title-developer>p {
     padding: 0 0 0 8px;
     font-size: 18px;
-    border-left: 4px solid #14B9C8
+    border-left: 4px solid #1d91cb
 }
 
 .section-title>p>span,
 div.user-home-side .section-title-developer>p>span {
-    color: #14B9C8
+    color: #1d91cb
 }
 
 .main-body-official-topic .section-title,
@@ -2120,7 +2120,7 @@ div.user-home-side .main-body-official-topic .section-title-developer {
     .video-js .vjs-big-play-button:focus,
     .video-js .vjs-big-play-button:hover {
         color: #fff;
-        background: #14B9C8!important
+        background: #1d91cb!important
     }
     .video-js .vjs-big-play-button>span {
         font-size: 30px
