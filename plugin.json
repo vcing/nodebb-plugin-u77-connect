@@ -31,6 +31,10 @@
         {
             "hook": "filter:widget.render:custom-recent-topics",
             "method": "renderCustomTopicsWidget"
+        },
+        {
+            "hook": "filter:widget.render:annual-festival",
+            "method": "renderAnnualFestival"
         }
     ],
     "templates": "./templates",

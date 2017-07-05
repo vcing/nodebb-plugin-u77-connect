@@ -94,6 +94,11 @@
                     name: "Custom Recent Topics",
                     description: "Lists the latest topics on your forum.",
                     content: 'u77-connect/admin/recenttopics'
+                }, {
+                    widget: "annual-festival",
+                    name:"2017 annual festival",
+                    description:'2017 u77 annual festival',
+                    content: 'u77-connect/admin/annualfestival'
                 }
             ], function (widget, _next) {
                 app
@@ -127,7 +132,8 @@
             params.res.render = function (template, data) {
                 _render
                     .call(params.res, 'u77-connect/category', data, function (err, html) {
-                        callback(err, html);
+                        params.html = html;
+                        callback(err, params);
                     });
             }
 
@@ -181,6 +187,26 @@
                 });
         });
     };
+
+    U77Connect.renderAnnualFestival = function(widget, callback) {
+        var img = '';
+        var link = '';
+        var images = widget.data.images.split(',');
+        var links = widget.data.links.split(',');
+        var startTime = parseInt(widget.data.startTime);
+        var intervalTime = parseInt(widget.data.intervalTime);
+        var now = Math.floor((new Date()).getTime()/1000);
+        for(var i = 0;i < images.length;i++) {
+            if(now > startTime + i * intervalTime && now < startTime + (i + 1) * intervalTime) {
+                img = images[i];
+                link = links.length > i ? links[i] : '';
+            }
+        }
+        app.render('u77-connect/annualfestival', {img:img,link:link}, function(err,html) {
+            widget.html = html;
+            callback(err,widget);
+        });
+    }
 
     function md5(str) {
         return crypto
