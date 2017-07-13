@@ -548,6 +548,7 @@ section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-bu
     section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-button-download .btn-save-verifying {
         padding: 8px
     }
+    .u77game-button-download .btn.android,
     .u77game-button-download .btn.ios,
     .u77game-button-download section.developer-app-submit .app-submit-main.form>form .form-footer .ios.btn-save-verifying,
     section.developer-app-submit .app-submit-main.form>form .form-footer .u77game-button-download .ios.btn-save-verifying {
